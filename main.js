@@ -64,5 +64,10 @@ export async function computeRoute(origin, destination) {
   console.log("Distance (meters):", route.distanceMeters);
   console.log("Duration (live travel time):", route.duration);
   console.log("Duration (baseline travel time):  ", route.staticDuration);
-}
 
+  return {
+    distanceMeters: route.distanceMeters,
+    duration: route.duration,
+    staticDuration: route.staticDuration,
+  };
+}
