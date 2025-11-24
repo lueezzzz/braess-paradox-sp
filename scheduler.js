@@ -19,9 +19,9 @@ if (!fs.existsSync(resultsDir)) {
 function isCollectionPeriod() {
   const now = new Date();
   const start = new Date(2025, 10, 25);
-  const end = new Date(2025, 11, 1);
+  const end = new Date(2025, 11, 2);
 
-  return now >= start && now <= end;
+  return now >= start && now < end;
 }
 
 async function collectAllRoutes(timeWindow) {
@@ -69,8 +69,16 @@ async function collectAllRoutes(timeWindow) {
 }
 
 function saveResults(results, timeWindow) {
-  const date = new Date().toISOString().split("T")[0];
-  const filename = path.join(resultsDir, `results-${date}-${timeWindow}.json`);
+  const now = new Date();
+  const date = now.toISOString().split("T")[0];
+
+  const time = now.toTimeString().slice(0, 8).replace(/:/g, "-");
+
+  const filename = path.join(
+    resultsDir,
+    `results-${date}-${timeWindow}-${time}.json`
+  );
+
   const data = JSON.stringify(results, null, 2);
 
   try {
