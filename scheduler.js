@@ -33,15 +33,17 @@ async function collectAllRoutes(timeWindow) {
     weekday: "long",
   });
 
-  for (let i = 0; i < MAP_COORDINATES.length - 1; i++) {
-    const origin = MAP_COORDINATES[i];
-    const destination = MAP_COORDINATES[i + 1];
+  for (let i = 0; i < MAP_COORDINATES.length; i++) {
+    const route = MAP_COORDINATES[i];
+    const origin = route.origin;
+    const destination = route.destination;
 
     try {
       const result = await computeRoute(origin, destination);
 
       if (result) {
         const record = {
+          steetName: route.name,
           origin: origin.intersection,
           destination: destination.intersection,
           day_of_week: dayOfWeek,
