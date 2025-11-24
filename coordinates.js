@@ -284,6 +284,7 @@ export const MAP_COORDINATES = [
         longitude: 122.569104,
       },
   },
+  
 ];
 
 
