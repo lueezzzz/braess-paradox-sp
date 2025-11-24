@@ -5,7 +5,7 @@ dotenv.config();
 
 const API_KEY = process.env.MAPS_API_KEY;
 
-async function computeRoute(origin, destination) {
+export async function computeRoute(origin, destination) {
   const url = "https://routes.googleapis.com/directions/v2:computeRoutes";
 
   const request = {
@@ -66,9 +66,3 @@ async function computeRoute(origin, destination) {
   console.log("Duration (baseline travel time):  ", route.staticDuration);
 }
 
-const origin = MAP_COORDINATES[0];
-const destination = MAP_COORDINATES[1];
-
-computeRoute(origin, destination).catch((err) => {
-  console.error("Error computing route:", err);
-});
