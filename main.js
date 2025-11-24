@@ -43,7 +43,7 @@ async function computeRoute(origin, destination) {
       "Content-Type": "application/json",
       "X-Goog-Api-Key": API_KEY,
       "X-Goog-FieldMask":
-        "routes.duration,routes.distanceMeters",
+        "routes.duration,routes.distanceMeters,routes.staticDuration",
     },
     body: JSON.stringify(request),
   });
@@ -62,9 +62,8 @@ async function computeRoute(origin, destination) {
   }
 
   console.log("Distance (meters):", route.distanceMeters);
-  console.log("Duration:   ", route.duration);
-
-  
+  console.log("Duration (live travel time):", route.duration);
+  console.log("Duration (baseline travel time):  ", route.staticDuration);
 }
 
 const origin = MAP_COORDINATES[0];
