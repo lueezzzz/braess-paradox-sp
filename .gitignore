@@ -1,6 +1,5 @@
 # API Keys and Credentials
 credentials.json
-*.json
 .env
 .env.local
 .env.*.local
