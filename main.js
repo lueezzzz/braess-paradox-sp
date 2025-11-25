@@ -1,5 +1,4 @@
 import dotenv from "dotenv";
-import { MAP_COORDINATES } from "./coordinates.js";
 
 dotenv.config();
 
