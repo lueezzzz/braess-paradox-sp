@@ -1,0 +1,178 @@
+[
+  {
+    "steetName": "Gen Luna St 4",
+    "origin": "Gen Luna St - Mabini St",
+    "destination": "Gen Luna St - Quezon St",
+    "day_of_week": "Wednesday",
+    "distance": 183,
+    "duration": "30s",
+    "static_duration": "37s",
+    "timestamp": "2025-11-26T09:35:34.135Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Gen Luna St 5",
+    "origin": "Gen Luna St - Quezon St",
+    "destination": "Gen Luna St - Valeria St",
+    "day_of_week": "Wednesday",
+    "distance": 138,
+    "duration": "23s",
+    "static_duration": "26s",
+    "timestamp": "2025-11-26T09:35:34.860Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Gen Luna St 6",
+    "origin": "Gen Luna St - Valeria St",
+    "destination": "Gen Luna St - Ruperto Montinola St",
+    "day_of_week": "Wednesday",
+    "distance": 166,
+    "duration": "49s",
+    "static_duration": "40s",
+    "timestamp": "2025-11-26T09:35:35.587Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Infante St",
+    "origin": "Gen Luna St - Infante St",
+    "destination": "Delgado St - Infante St",
+    "day_of_week": "Wednesday",
+    "distance": 691,
+    "duration": "280s",
+    "static_duration": "162s",
+    "timestamp": "2025-11-26T09:35:36.786Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Ybernias St",
+    "origin": "Gen Luna St - Ybernias St",
+    "destination": "Delgado St - Ybernias St",
+    "day_of_week": "Wednesday",
+    "distance": 370,
+    "duration": "176s",
+    "static_duration": "80s",
+    "timestamp": "2025-11-26T09:35:37.506Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Jalandoni St",
+    "origin": "Gen Luna St - Jalandoni St",
+    "destination": "Delgado St - Jalandoni St",
+    "day_of_week": "Wednesday",
+    "distance": 371,
+    "duration": "180s",
+    "static_duration": "99s",
+    "timestamp": "2025-11-26T09:35:38.228Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Mabini St",
+    "origin": "Gen Luna St - Mabini St",
+    "destination": "Delgado St - Mabini St",
+    "day_of_week": "Wednesday",
+    "distance": 381,
+    "duration": "64s",
+    "static_duration": "74s",
+    "timestamp": "2025-11-26T09:35:39.038Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Quezon St",
+    "origin": "Gen Luna St - Quezon St",
+    "destination": "Delgado St - Quezon St",
+    "day_of_week": "Wednesday",
+    "distance": 378,
+    "duration": "97s",
+    "static_duration": "86s",
+    "timestamp": "2025-11-26T09:35:39.674Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Valeria St",
+    "origin": "Gen Luna St - Valeria St",
+    "destination": "Delgado St - Valeria St",
+    "day_of_week": "Wednesday",
+    "distance": 706,
+    "duration": "294s",
+    "static_duration": "161s",
+    "timestamp": "2025-11-26T09:35:40.298Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Ruperto Montinola St",
+    "origin": "Gen Luna St - Ruperto Montinola St",
+    "destination": "Delgado St - Ruperto Montinola St",
+    "day_of_week": "Wednesday",
+    "distance": 701,
+    "duration": "150s",
+    "static_duration": "143s",
+    "timestamp": "2025-11-26T09:35:40.946Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Delgado St 1",
+    "origin": "Delgado St - Infante St",
+    "destination": "Delgado St - Ybernias St",
+    "day_of_week": "Wednesday",
+    "distance": 131,
+    "duration": "23s",
+    "static_duration": "33s",
+    "timestamp": "2025-11-26T09:35:41.639Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Delgado St 2",
+    "origin": "Delgado St - Ybernias St",
+    "destination": "Delgado St - Jalandoni St",
+    "day_of_week": "Wednesday",
+    "distance": 625,
+    "duration": "158s",
+    "static_duration": "106s",
+    "timestamp": "2025-11-26T09:35:42.275Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Delgado St 3",
+    "origin": "Delgado St - Jalandoni St",
+    "destination": "Delgado St - Mabini St",
+    "day_of_week": "Wednesday",
+    "distance": 338,
+    "duration": "74s",
+    "static_duration": "70s",
+    "timestamp": "2025-11-26T09:35:42.887Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Delgado St 4",
+    "origin": "Delgado St - Mabini St",
+    "destination": "Delgado St - Quezon St",
+    "day_of_week": "Wednesday",
+    "distance": 179,
+    "duration": "46s",
+    "static_duration": "40s",
+    "timestamp": "2025-11-26T09:35:43.535Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Delgado St 5",
+    "origin": "Delgado St - Quezon St",
+    "destination": "Delgado St - Valeria St",
+    "day_of_week": "Wednesday",
+    "distance": 152,
+    "duration": "64s",
+    "static_duration": "41s",
+    "timestamp": "2025-11-26T09:35:44.204Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  },
+  {
+    "steetName": "Delgado St 6",
+    "origin": "Delgado St - Valeria St",
+    "destination": "Delgado St - Ruperto Montinola St",
+    "day_of_week": "Wednesday",
+    "distance": 773,
+    "duration": "188s",
+    "static_duration": "179s",
+    "timestamp": "2025-11-26T09:35:44.839Z",
+    "timeWindow": "5pm-Peak-Afternoon"
+  }
+]
