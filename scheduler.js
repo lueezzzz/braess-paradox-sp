@@ -72,8 +72,10 @@ async function collectAllRoutes(timeWindow) {
 
 function saveResults(results, timeWindow) {
   const now = new Date();
-  const date = now.toISOString().split("T")[0];
-
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  const date = `${year}-${month}-${day}`;
   const time = now.toTimeString().slice(0, 8).replace(/:/g, "-");
 
   const filename = path.join(
@@ -99,7 +101,7 @@ console.log("  • 5:00 PM - 6:00 pm - Peak Afternoon Hours");
 console.log("  • 10:00 PM - 11 pm - Non-Peak Hours");
 console.log("\nWaiting for scheduled times...\n");
 
-cron.schedule("* 7 * * *", async () => {
+cron.schedule("* 8 * * *", async () => {
   if (!isCollectionPeriod()) {
     return;
   }
