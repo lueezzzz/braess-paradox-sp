@@ -1,0 +1,211 @@
+[
+  {
+    "steetName": "Gen Luna St 1",
+    "origin": "Gen Luna St - Infante St",
+    "destination": "Gen Luna St - Ybernias St",
+    "day_of_week": "Saturday",
+    "distance": 190,
+    "duration": "18s",
+    "static_duration": "43s",
+    "timestamp": "2025-11-29T14:36:00.174Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Gen Luna St 2",
+    "origin": "Gen Luna St - Ybernias St",
+    "destination": "Gen Luna St - Jalandoni St",
+    "day_of_week": "Saturday",
+    "distance": 636,
+    "duration": "59s",
+    "static_duration": "97s",
+    "timestamp": "2025-11-29T14:36:00.738Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Gen Luna St 3",
+    "origin": "Gen Luna St - Jalandoni St",
+    "destination": "Gen Luna St - Mabini St",
+    "day_of_week": "Saturday",
+    "distance": 346,
+    "duration": "33s",
+    "static_duration": "64s",
+    "timestamp": "2025-11-29T14:36:01.307Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Gen Luna St 4",
+    "origin": "Gen Luna St - Mabini St",
+    "destination": "Gen Luna St - Quezon St",
+    "day_of_week": "Saturday",
+    "distance": 183,
+    "duration": "16s",
+    "static_duration": "37s",
+    "timestamp": "2025-11-29T14:36:01.874Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Gen Luna St 5",
+    "origin": "Gen Luna St - Quezon St",
+    "destination": "Gen Luna St - Valeria St",
+    "day_of_week": "Saturday",
+    "distance": 138,
+    "duration": "12s",
+    "static_duration": "26s",
+    "timestamp": "2025-11-29T14:36:02.439Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Gen Luna St 6",
+    "origin": "Gen Luna St - Valeria St",
+    "destination": "Gen Luna St - Ruperto Montinola St",
+    "day_of_week": "Saturday",
+    "distance": 166,
+    "duration": "24s",
+    "static_duration": "40s",
+    "timestamp": "2025-11-29T14:36:03.001Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Infante St",
+    "origin": "Gen Luna St - Infante St",
+    "destination": "Delgado St - Infante St",
+    "day_of_week": "Saturday",
+    "distance": 410,
+    "duration": "55s",
+    "static_duration": "159s",
+    "timestamp": "2025-11-29T14:36:03.555Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Ybernias St",
+    "origin": "Gen Luna St - Ybernias St",
+    "destination": "Delgado St - Ybernias St",
+    "day_of_week": "Saturday",
+    "distance": 370,
+    "duration": "89s",
+    "static_duration": "80s",
+    "timestamp": "2025-11-29T14:36:04.136Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Jalandoni St",
+    "origin": "Gen Luna St - Jalandoni St",
+    "destination": "Delgado St - Jalandoni St",
+    "day_of_week": "Saturday",
+    "distance": 371,
+    "duration": "61s",
+    "static_duration": "99s",
+    "timestamp": "2025-11-29T14:36:04.702Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Mabini St",
+    "origin": "Gen Luna St - Mabini St",
+    "destination": "Delgado St - Mabini St",
+    "day_of_week": "Saturday",
+    "distance": 381,
+    "duration": "49s",
+    "static_duration": "74s",
+    "timestamp": "2025-11-29T14:36:05.266Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Quezon St",
+    "origin": "Gen Luna St - Quezon St",
+    "destination": "Delgado St - Quezon St",
+    "day_of_week": "Saturday",
+    "distance": 378,
+    "duration": "56s",
+    "static_duration": "86s",
+    "timestamp": "2025-11-29T14:36:05.831Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Valeria St",
+    "origin": "Gen Luna St - Valeria St",
+    "destination": "Delgado St - Valeria St",
+    "day_of_week": "Saturday",
+    "distance": 706,
+    "duration": "103s",
+    "static_duration": "161s",
+    "timestamp": "2025-11-29T14:36:06.412Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Ruperto Montinola St",
+    "origin": "Gen Luna St - Ruperto Montinola St",
+    "destination": "Delgado St - Ruperto Montinola St",
+    "day_of_week": "Saturday",
+    "distance": 701,
+    "duration": "110s",
+    "static_duration": "143s",
+    "timestamp": "2025-11-29T14:36:06.962Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Delgado St 1",
+    "origin": "Delgado St - Infante St",
+    "destination": "Delgado St - Ybernias St",
+    "day_of_week": "Saturday",
+    "distance": 131,
+    "duration": "15s",
+    "static_duration": "33s",
+    "timestamp": "2025-11-29T14:36:07.529Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Delgado St 2",
+    "origin": "Delgado St - Ybernias St",
+    "destination": "Delgado St - Jalandoni St",
+    "day_of_week": "Saturday",
+    "distance": 625,
+    "duration": "89s",
+    "static_duration": "106s",
+    "timestamp": "2025-11-29T14:36:08.090Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Delgado St 3",
+    "origin": "Delgado St - Jalandoni St",
+    "destination": "Delgado St - Mabini St",
+    "day_of_week": "Saturday",
+    "distance": 338,
+    "duration": "48s",
+    "static_duration": "70s",
+    "timestamp": "2025-11-29T14:36:08.653Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Delgado St 4",
+    "origin": "Delgado St - Mabini St",
+    "destination": "Delgado St - Quezon St",
+    "day_of_week": "Saturday",
+    "distance": 179,
+    "duration": "28s",
+    "static_duration": "40s",
+    "timestamp": "2025-11-29T14:36:09.216Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Delgado St 5",
+    "origin": "Delgado St - Quezon St",
+    "destination": "Delgado St - Valeria St",
+    "day_of_week": "Saturday",
+    "distance": 152,
+    "duration": "22s",
+    "static_duration": "41s",
+    "timestamp": "2025-11-29T14:36:09.792Z",
+    "timeWindow": "10pm-Non-Peak"
+  },
+  {
+    "steetName": "Delgado St 6",
+    "origin": "Delgado St - Valeria St",
+    "destination": "Delgado St - Ruperto Montinola St",
+    "day_of_week": "Saturday",
+    "distance": 773,
+    "duration": "154s",
+    "static_duration": "179s",
+    "timestamp": "2025-11-29T14:36:10.360Z",
+    "timeWindow": "10pm-Non-Peak"
+  }
+]
