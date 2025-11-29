@@ -101,7 +101,7 @@ console.log("  • 5:00 PM - 6:00 pm - Peak Afternoon Hours");
 console.log("  • 10:00 PM - 11 pm - Non-Peak Hours");
 console.log("\nWaiting for scheduled times...\n");
 
-cron.schedule("* 8 * * *", async () => {
+cron.schedule("* 7 * * *", async () => {
   if (!isCollectionPeriod()) {
     return;
   }
