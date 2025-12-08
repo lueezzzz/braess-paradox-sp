@@ -8,6 +8,12 @@ class TrafficNetwork:
     def __init__(self):
         self.graph = nx.DiGraph()
 
+    def copy_network(self):
+        # Create a copy of the current network
+        new_network = TrafficNetwork()
+        new_network.graph = self.graph.copy()
+        return new_network
+
     def add_intersection(self, node_id, name):
         # Add a node representing an intersection
         self.graph.add_node(node_id, name=name)
@@ -20,6 +26,7 @@ class TrafficNetwork:
                             capacity = capacity,
                             flow = 0)
         
+        # Add reverse road if not one-way
         if not one_way:
             self.graph.add_edge(v, u,
                                 name = name + " (Reverse)", 
@@ -31,6 +38,8 @@ class TrafficNetwork:
         # Remove a directed edge representing a road
         if self.graph.has_edge(u, v):
             self.graph.remove_edge(u, v)
+        if self.graph.has_edge(v, u):
+            self.graph.remove_edge(v, u)
 
     def calculate_bpr_cost(self, flow, free_flow_time, capacity):
         # Calculate travel time using the BPR function
@@ -80,6 +89,7 @@ class TrafficNetwork:
                                            edge['capacity'])
             print(f"{edge['name']}: \nFlow = {edge['flow']}, \tCost = {cost:.2f}")
 
+# Initialize traffic network
 net = TrafficNetwork()
 
 # Intialize intersections
@@ -102,42 +112,48 @@ for intersection, name in intersections:
     net.add_intersection(intersection, name)
 
 # Initialize roads (MODIFY FFT AND CAPACITY AS NEEDED)
-roads = [("1", "2", "Gen Luna St 1", 2, 500, True),
-         ("2", "3", "Gen Luna St 2", 2, 500, True),
-         ("3", "1", "Gen Luna St 1 2 (Reverse)", 2, 500, True),
-         ("3", "4", "Gen Luna St 3", 2, 500, False),
-         ("4", "5", "Gen Luna St 4", 2, 500, True),
-         ("5", "6", "Gen Luna St 5", 2, 500, True),
-         ("6", "7", "Gen Luna St 6", 2, 500, True),
-         ("7", "4", "Gen Luna St 4 5 6 (Reverse)", 2, 500, True),
-         ("8", "9", "Delgado St 1", 2, 500, False),
-         ("9", "10", "Delgado St 2", 2, 500, False),
-         ("10", "11", "Delgado St 3", 2, 500, False),
-         ("11", "12", "Delgado St 4", 2, 500, False),
-         ("12", "13", "Delgado St 5", 2, 500, False),
-         ("13", "14", "Delgado St 6", 2, 500, False),
-         ("1", "8", "Infante St", 1, 300, False),
-         ("2", "9", "Ybernias St", 1, 300, False),
-         ("3", "10", "Jalandoni St", 1, 300, False),
-         ("4", "11", "Mabini St", 1, 300, False),
-         ("5", "12", "Quezon St", 1, 300, False),
-         ("13", "6", "Valeria St", 1, 300, True),
-         ("7", "14", "Ruperto Montinola St", 1, 300, False)]
+roads = [("1", "2", "Gen Luna St 1", 0.3187, 500, True),
+         ("2", "3", "Gen Luna St 2", 1.0371, 500, True),
+         ("3", "1", "Gen Luna St 1 2 (Reverse)", 1.3558, 500, True),
+         ("3", "4", "Gen Luna St 3", 0.5196, 500, False),
+         ("4", "5", "Gen Luna St 4", 0.2692, 500, True),
+         ("5", "6", "Gen Luna St 5", 0.1979, 500, True),
+         ("6", "7", "Gen Luna St 6", 0.3542, 500, True),
+         ("7", "4", "Gen Luna St 4 5 6 (Reverse)", 1.2713, 500, True),
+         ("8", "9", "Delgado St 1", 0.2825, 500, False),
+         ("9", "10", "Delgado St 2", 1.4488, 500, False),
+         ("10", "11", "Delgado St 3", 0.8083, 500, False),
+         ("11", "12", "Delgado St 4", 0.4788, 500, False),
+         ("12", "13", "Delgado St 5", 0.3886, 500, False),
+         ("13", "14", "Delgado St 6", 2.4528, 500, False),
+         ("1", "8", "Infante St", 0.8672, 300, False),
+         ("2", "9", "Ybernias St", 1.3845, 300, False),
+         ("3", "10", "Jalandoni St", 1.055, 300, False),
+         ("4", "11", "Mabini St", 0.8086, 300, False),
+         ("5", "12", "Quezon St", 0.9912, 300, False),
+         ("13", "6", "Valeria St", 1.6738, 300, True),
+         ("7", "14", "Ruperto Montinola St", 1.3845, 300, False)]
 
 for u, v, name, fft, cap, one_way in roads:
     net.add_road(u, v, name, fft, cap, one_way=one_way)
 
-time_before = net.simulate_traffic(start="1", end="14", demand=5000)
-print("Before Road Removal")
-net.print_network_state()
 
-# Remove a road to simulate closure (CHANGE TO DESIRED ROAD)
-net.remove_road("7", "14")
-net.remove_road("14", "7")
+# Simulate traffic and print original total travel time
+time_orig = net.simulate_traffic(start="1", end="14", demand=5000)
+print(f"Original total travel time: \t{time_orig}")
 
-time_after = net.simulate_traffic(start="1", end="14", demand=5000)
-print("\n\nAfter Road Removal")
-net.print_network_state()
+# Set of roads to be removed for testing Braess's Paradox
+connecting_roads = [("1", "8", "Infante St"),
+                    ("2", "9", "Ybernias St"),
+                    ("3", "10", "Jalandoni St"),
+                    ("4", "11", "Mabini St"),
+                    ("5", "12", "Quezon St"),
+                    ("13", "6", "Valeria St"),
+                    ("7", "14", "Ruperto Montinola St")]
 
-print(f"\n\nTotal travel time before road removal: {time_before}")
-print(f"Total travel time after road removal: {time_after}")
+# Test removal of each connecting road
+for u, v, name in connecting_roads:
+    net_copy = net.copy_network()
+    net_copy.remove_road(u, v)
+    time_removed = net_copy.simulate_traffic(start="1", end="14", demand=5000)
+    print(f"Removed {name}: \t\t{time_removed}")
