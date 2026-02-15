@@ -1,10 +1,2 @@
-intersections = [
-    {
-        id: 
-        name: 
-        longitude
-        latitude:
-        connections: 
-    }
-]
+intersections = []
 roads = []
