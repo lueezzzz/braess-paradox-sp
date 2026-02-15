@@ -51,4 +51,54 @@ intersections = [
   }, 
 ];
 
-roads = [];
+roads = [
+    {
+        name: "Locsin St. 1",
+        A: "Molo - 1",
+        B: "Molo - 2",
+        distance: 120,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Locsin St. 2",
+        A: "Molo - 2",
+        B: "Molo - 3",
+        distance: 110,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Locsin St. 3",
+        A: "Molo - 3",
+        B: "Molo - 4",
+        distance: 190,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Locsin St. 4",
+        A: "Molo - 4",
+        B: "Molo - 5",
+        distance: 220,
+        lanes: 2,
+        one_way: false
+    },
+    {
+        name: "Locsin St. 5",
+        A: "Molo - 5",
+        B: "Molo - 6",
+        distance: 500,
+        lanes: 4,
+        one_way: false,
+    },
+    {
+        name: "MH Del Pilar St -> Locsin",
+        A: "Molo - 7",
+        B: "Molo - 3",
+        distance: 700,
+        lanes: 4,
+        one_way: true,
+    }
+
+];
