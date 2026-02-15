@@ -1,0 +1,2 @@
+intersections = []
+roads = []
