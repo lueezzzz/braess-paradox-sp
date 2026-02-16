@@ -163,8 +163,8 @@ intersections = [
   {
     id: "Proper - 24",
     name: "Delgado St - Ruperto Montinola St Right",
-    latitude: 10.696552, 
-    longitude: 122.569018,
+    latitude: 10.697813, 
+    longitude: 122.569103,
     connections: ["Proper - 8", "Proper - 23"]
   },
 ]
