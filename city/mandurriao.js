@@ -31,7 +31,7 @@ intersections = [
 
 roads = [
     {
-        name: "Mandurria - Sn Miguel Rd",
+        name: "Mandurriao - Sn Miguel Rd",
         A: "mandurriao - 3",
         B: "", //Dead - End
         distance: 200,

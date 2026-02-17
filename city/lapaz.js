@@ -60,7 +60,7 @@ intersections = [
     name: "Baldoza St - Monfort Blvd",
     latitude: 10.713908,
     longitude: 122.581449,
-    connections: ["lapaz - 8"], //[8, Coastal Rd, Monfort Blvd]
+    connections: ["lapaz - 8", "lapuz - 7"], //[Monfort Blvd]
   },
   {
     id: "lapaz - 10",
@@ -69,22 +69,29 @@ intersections = [
     longitude: 122.567494,
     connections: ["lapaz - 1"], //[Bonifacio Dr, Lapuz]
   },
+  {
+    id: "lapaz - 11",
+    name: "Monfort Blvd",
+    latitude: 10.729156,
+    longitude: 122.579585,
+    connections: ["lapaz - 9"], 
+  },
 ];
 
 roads = [
-  {
-      name: "Luna St",
-      A: "lapaz - 10",
-      B: "", //[Luna St, Jaro]
-      distance: ,
-      lanes: 2,
-      one_way: false,
-  },
+  // {
+  //     name: "Luna St",
+  //     A: "lapaz - 10",
+  //     B: "", //[Luna St, Jaro]
+  //     distance: ,
+  //     lanes: 2,
+  //     one_way: false,
+  // },
   {
       name: "Rizal St - Luna St",
       A: "lapaz - 2",
       B: "lapaz - 3", 
-      distance: ,
+      distance: 160,
       lanes: 1,
       one_way: true,
   },
@@ -92,7 +99,7 @@ roads = [
       name: "Huervana St - Rizal St",
       A: "lapaz - 1",
       B: "lapaz - 2",
-      distance: ,
+      distance: 110,
       lanes: 1,
       one_way: true,
   },
@@ -100,7 +107,7 @@ roads = [
       name: "Huervana St - Burgos St",
       A: "lapaz - 2",
       B: "lapaz - 4",
-      distance: ,
+      distance: 350,
       lanes: 2,
       one_way: false,
   },
@@ -108,7 +115,7 @@ roads = [
       name: "Huervana St - Jereos St",
       A: "lapaz - 4",
       B: "lapaz - 5",
-      distance: ,
+      distance: 210,
       lanes: 1,
       one_way: true,
   },
@@ -116,7 +123,7 @@ roads = [
       name: "Jereos St - Huervana Ext",
       A: "lapaz - 5",
       B: "lapaz - 6",
-      distance: ,
+      distance: 200,
       lanes: 1,
       one_way: true,
   },
@@ -124,7 +131,7 @@ roads = [
       name: "Huervana Ext",
       A: "lapaz - 6",
       B: "lapaz - 7",
-      distance: ,
+      distance: 210,
       lanes: 1,
       one_way: true,
   },
@@ -132,7 +139,7 @@ roads = [
       name: "Burgos St - Huervana St",
       A: "lapaz - 7",
       B: "lapaz - 4",
-      distance: ,
+      distance: 180,
       lanes: 1,
       one_way: true,
   },
@@ -140,7 +147,7 @@ roads = [
       name: "Lopez Jaena St",
       A: "lapaz - 5",
       B: "lapaz - 8",
-      distance: ,
+      distance: 500,
       lanes: 2,
       one_way: false,
   },
@@ -148,40 +155,40 @@ roads = [
       name: "Baldoza St",
       A: "lapaz - 8",
       B: "lapaz - 9",
-      distance: ,
+      distance: 650,
       lanes: 2,
       one_way: false,
   },
   {
       name: "Coastal Rd",
       A: "lapaz - 9",
-      B: "", //[Lapuz]
-      distance: ,
+      B: "lapuz - 7", 
+      distance: 1200,
       lanes: 2,
       one_way: false,
   },
-  {
-      name: "Monfort Blvd",
-      A: "lapaz - 9",
-      B: "", //Monfort [Jaro]
-      distance: ,
-      lanes: 2,
-      one_way: false,
-  },
-  {
-      name: "Burgos St",
-      A: "lapaz - 7",
-      B: "", //[Burgos, Jaro]
-      distance: ,
-      lanes: 2,
-      one_way: false,
-  },
-  {
-      name: "Jereos St",
-      A: "lapaz - 5",
-      B: "lapaz - 6",
-      distance: ,
-      lanes: 2,
-      one_way: false,
-  },
+  // {
+  //     name: "Monfort Blvd",
+  //     A: "lapaz - 9",
+  //     B: "", //Monfort [Jaro]
+  //     distance: ,
+  //     lanes: 2,
+  //     one_way: false,
+  // },
+  // {
+  //     name: "Burgos St",
+  //     A: "lapaz - 7",
+  //     B: "", //[Burgos, Jaro]
+  //     distance: ,
+  //     lanes: 2,
+  //     one_way: false,
+  // },
+  // {
+  //     name: "Jereos St",
+  //     A: "lapaz - 5",
+  //     B: "", //[Jereos, Jaro]
+  //     distance: ,
+  //     lanes: 2,
+  //     one_way: false,
+  // },
 ];
