@@ -1,0 +1,429 @@
+intersections = [
+  {
+    id: "Proper - 1",
+    name: "Gen Luna St - Infante St",
+    latitude: 10.699766,
+    longitude: 122.554176,
+    connections: ["Proper - 2", "Proper - 7"]
+  },
+  {
+    id: "Proper - 2",
+    name: "Delgado St - Infante St",
+    latitude: 10.696536, 
+    longitude: 122.554848,
+    connections: ["Proper - 1", "Proper - 3", "Proper - 10"]
+  },
+  {
+    id: "Proper - 3",
+    name: "Rizal St - Infante St",
+    latitude: 10.694484, 
+    longitude: 122.555064,
+    connections: ["Proper - 2", "Proper - 4", "Proper - 5"]
+  },
+  {
+    id: "Proper - 4",
+    name: "Baluarte - Calumpang - Villa - Oton Blvd - Infante St",
+    latitude: 10.692782, 
+    longitude: 122.555299,
+    connections: ["Proper - 3", "Proper - 5"]
+  },
+  {
+    id: "Proper - 5",
+    name: "Baluarte - Calumpang - Villa - Oton Blvd - Rizal St",
+    latitude: 10.693734, 
+    longitude: 122.556639,
+    connections: ["Proper - 3", "Proper - 4", "Proper - 6"]
+  },
+  {
+    id: "Proper - 6",
+    name: "Ledesma St - Rizal St",
+    latitude: 10.693333, 
+    longitude: 122.558918,
+    connections: ["Proper - 5", "Proper - 11", "Proper - 14"]
+  },
+  {
+    id: "Proper - 7",
+    name: "Gen Luna St - Bonifacio Dr",
+    latitude: 10.701768, 
+    longitude: 122.568323,
+    connections: ["Proper - 1", "Proper - 8"]
+  },
+  {
+    id: "Proper - 8",
+    name: "Gen Luna St - Ruperto Montinola St",
+    latitude: 10.701513, 
+    longitude: 122.569120,
+    connections: ["Proper - 7", "Proper - 9", "Proper - 10", "Proper - 23"]
+  },
+  {
+    id: "Proper - 9",
+    name: "Gen Luna St - Muelle Loney St",
+    latitude: 10.701726, 
+    longitude: 122.569779,
+    connections: ["Proper - 8", "Proper - 12"]
+  },
+  {
+    id: "Proper - 10",
+    name: "Delgado St - Ruperto Montinola St Left",
+    latitude: 10.697813, 
+    longitude: 122.569103,
+    connections: ["Proper - 2", "Proper - 8", "Proper - 11"]
+  },
+  {
+    id: "Proper - 11",
+    name: "Ledesma St - Ruperto Montinola St",
+    latitude: 10.696552, 
+    longitude: 122.569018,
+    connections: ["Proper - 6", "Proper - 10", "Proper - 13"]
+  },
+  {
+    id: "Proper - 12",
+    name: "Arroyo St - Muelle Loney St",
+    latitude: 10.697060, 
+    longitude: 122.570971,
+    connections: ["Proper - 9", "Proper - 18", "Proper - 23"]
+  },
+  {
+    id: "Proper - 13",
+    name: "JM Basa St - De la Rama St",
+    latitude: 10.692725, 
+    longitude: 122.572940,
+    connections: ["Proper - 11", "Proper - 14", "Proper - 17", "Proper - 23"]
+  },
+  {
+    id: "Proper - 14",
+    name: "JM Basa St - Rizal St",
+    latitude: 10.691733, 
+    longitude: 122.573801,
+    connections: ["Proper - 6", "Proper - 13", "Proper - 15"]
+  },
+  {
+    id: "Proper - 15",
+    name: "General Hughes St - Duran St",
+    latitude: 10.689938, 
+    longitude: 122.576432,
+    connections: ["Proper - 14", "Proper - 16", "Proper - 19"]
+  },
+  {
+    id: "Proper - 16",
+    name: "Duran St",
+    latitude: 10.693996, 
+    longitude: 122.579428,
+    connections: ["Proper - 15"]
+  },
+  {
+    id: "Proper - 17",
+    name: "Dela Rama St - Blumentritt",
+    latitude: 10.696937, 
+    longitude: 122.577236,
+    connections: ["Proper - 13", "Proper - 18", "Proper - 19", "Proper - 20"]
+  },
+  {
+    id: "Proper - 18",
+    name: "Muelle Loney St - Blumentritt Left",
+    latitude: 10.697315, 
+    longitude: 122.575792,
+    connections: ["Proper - 12", "Proper - 17", "Proper - 19"]
+  },
+  {
+    id: "Proper - 19",
+    name: "Muelle Loney St - Blumentritt Right",
+    latitude: 10.696437, 
+    longitude: 122.579052,
+    connections: ["Proper - 15", "Proper - 17", "Proper - 18"]
+  },
+  {
+    id: "Proper - 20",
+    name: "De la Rama St",
+    latitude: 10.697963, 
+    longitude: 122.578372,
+    connections: ["Proper - 17"]
+  },
+  {
+    id: "Proper - 21",
+    name: "Fort San Pedro Dr - Muelle Loney St",
+    latitude: 10.692842, 
+    longitude: 122.582764,
+    connections: ["Proper - 19", "Proper - 22"]
+  },
+  {
+    id: "Proper - 22",
+    name: "Fort San Pedro Dr - General Hughes St",
+    latitude: 10.688291, 
+    longitude: 122.579310,
+    connections: ["Proper - 15", "Proper - 21"]
+  },
+  {
+    id: "Proper - 23",
+    name: "Arroyo St - Ruperto Montinola St",
+    latitude: 10.696552, 
+    longitude: 122.569018,
+    connections: ["Proper - 12", "Proper - 13", "Proper - 24"]
+  },
+  {
+    id: "Proper - 24",
+    name: "Delgado St - Ruperto Montinola St Right",
+    latitude: 10.697813, 
+    longitude: 122.569103,
+    connections: ["Proper - 8", "Proper - 23"]
+  },
+]
+
+roads = [
+  {
+    name: "Infante St 1",
+    A: "Proper - 1",
+    B: "Proper - 2",
+    distance: 350,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Infante St 2",
+    A: "Proper - 2",
+    B: "Proper - 3",
+    distance: 230,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Infante St 3",
+    A: "Proper - 3",
+    B: "Proper - 4",
+    distance: 190,
+    lanes: 2,
+    one_way: true
+  },
+  {
+    name: "Baluarte - Calumpang - Villa - Oton Blvd",
+    A: "Proper - 4",
+    B: "Proper - 5",
+    distance: 180,
+    lanes: 2,
+    one_way: true
+  },
+  {
+    name: "Rizal St 1",
+    A: "Proper - 5",
+    B: "Proper - 3",
+    distance: 190,
+    lanes: 2,
+    one_way: true
+  },
+  {
+    name: "Rizal St 2",
+    A: "Proper - 5",
+    B: "Proper - 6",
+    distance: 260,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Rizal St 3",
+    A: "Proper - 6",
+    B: "Proper - 14",
+    distance: 1700,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Ledesma St",
+    A: "Proper - 6",
+    B: "Proper - 11",
+    distance: 1160,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Gen Luna St 1",
+    A: "Proper - 1",
+    B: "Proper - 7",
+    distance: 1550,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Gen Luna St 2",
+    A: "Proper - 7",
+    B: "Proper - 8",
+    distance: 95,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Gen Luna St 3",
+    A: "Proper - 8",
+    B: "Proper - 9",
+    distance: 75,
+    lanes: 12,
+    one_way: false
+  },
+  {
+    name: "Ruperto Montinola St 1",
+    A: "Proper - 8",
+    B: "Proper - 10",
+    distance: 400,
+    lanes: 2,
+    one_way: true
+  },
+  {
+    name: "Ruperto Montinola St 2",
+    A: "Proper - 10",
+    B: "Proper - 11",
+    distance: 130,
+    lanes: 2,
+    one_way: true
+  },
+  {
+    name: "Delgado St",
+    A: "Proper - 2",
+    B: "Proper - 10",
+    distance: 1550,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Arroyo St",
+    A: "Proper - 12",
+    B: "Proper - 23",
+    distance: 200,
+    lanes: 1,
+    one_way: false
+  },
+  {
+    name: "JM Basa St 1",
+    A: "Proper - 11",
+    B: "Proper - 13",
+    distance: 600,
+    lanes: 2,
+    one_way: true
+  },
+  {
+    name: "JM Basa St 2",
+    A: "Proper - 13",
+    B: "Proper - 14",
+    distance: 150,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "General Hughes St 1",
+    A: "Proper - 14",
+    B: "Proper - 15",
+    distance: 350,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Duran St",
+    A: "Proper - 15",
+    B: "Proper - 16",
+    distance: 550,
+    lanes: 1,
+    one_way: false
+  },
+  {
+    name: "General Hughes St 2",
+    A: "Proper - 15",
+    B: "Proper - 22",
+    distance: 350,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Dela Rama St 1",
+    A: "Proper - 13",
+    B: "Proper - 17",
+    distance: 650,
+    lanes: 1,
+    one_way: false
+  },
+  {
+    name: "Dela Rama St 2",
+    A: "Proper - 17",
+    B: "Proper - 20",
+    distance: 170,
+    lanes: 1,
+    one_way: false
+  },
+  {
+    name: "Blumentritt 1",
+    A: "Proper - 17",
+    B: "Proper - 18",
+    distance: 160,
+    lanes: 1,
+    one_way: false
+  },
+  {
+    name: "Blumentritt 2",
+    A: "Proper - 17",
+    B: "Proper - 19",
+    distance: 220,
+    lanes: 1,
+    one_way: false
+  },
+  {
+    name: "Muelle Loney St 1",
+    A: "Proper - 9",
+    B: "Proper - 12",
+    distance: 550,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Muelle Loney St 2",
+    A: "Proper - 12",
+    B: "Proper - 18",
+    distance: 900,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Muelle Loney St 3",
+    A: "Proper - 18",
+    B: "Proper - 19",
+    distance: 800,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Muelle Loney St 4",
+    A: "Proper - 19",
+    B: "Proper - 21",
+    distance: 550,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "Fort San Pedro Dr",
+    A: "Proper - 21",
+    B: "Proper - 22",
+    distance: 700,
+    lanes: 2,
+    one_way: false
+  },
+  {
+    name: "JM Basa St 1 (Reverse)",
+    A: "Proper - 13",
+    B: "Proper - 23",
+    distance: 600,
+    lanes: 2,
+    one_way: true
+  },
+  {
+    name: "Ruperto Montinola St 2 (Reverse)",
+    A: "Proper - 23",
+    B: "Proper - 24",
+    distance: 130,
+    lanes: 2,
+    one_way: true
+  },
+  {
+    name: "Ruperto Montinola St 1 (Reverse)",
+    A: "Proper - 24",
+    B: "Proper - 8",
+    distance: 400,
+    lanes: 2,
+    one_way: true
+  }
+];
