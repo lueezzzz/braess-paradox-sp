@@ -14,7 +14,7 @@ intersections = [
         connections: ["villa - 1", "villa - 3"], //[3,4, Iloilo Circumferential Rd 1]
     },
     {
-        id: "villa -3",
+        id: "villa - 3",
         name: "Jocson St - Quezon St",
         latitude: 10.688729 ,
         longitude: 122.526827,
@@ -22,7 +22,7 @@ intersections = [
     },
     {
         id: "villa - 4",
-        name: "Osmena St - Yulo Dr",
+        name: "Quezon St - Yulo Dr",
         latitude: 10.688957,
         longitude: 122.521095,
         connections: ["villa - 1", "villa - 3"],

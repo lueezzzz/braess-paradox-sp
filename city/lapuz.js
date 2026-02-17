@@ -67,14 +67,14 @@ roads = [
     lanes: 2,
     one_way: false,
   },
-//   {
-//     name: "Rizal St - Lapuz-Mansaya-Loboc Rd",
-//     A: "", //"lapaz - 2"
-//     B: "lapuz - 6",
-//     distance: ,
-//     lanes: 2,
-//     one_way: false,
-//   },
+  {
+    name: "Rizal St - Lapuz-Mansaya-Loboc Rd",
+    A: "lapaz - 2", 
+    B: "lapuz - 6",
+    distance: 1300,
+    lanes: 2,
+    one_way: false,
+  },
   {
     name: "Rizal St - New Iloilo Ferry Terminal Access Rd",
     A: "lapuz - 5",
