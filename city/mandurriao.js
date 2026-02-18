@@ -4,7 +4,7 @@ intersections = [
         name: "Mandurriao - Jaro Rd - Old Iloilo - Capiz Rd",
         latitude: 10.719516,
         longitude: 122.552187,
-        connections: ["mandurriao - 2"], //["mandurriao - 2", Infante],
+        connections: ["mandurriao - 2", "jaro - 7", "jaro - 17"], 
     },
     {
         id: "mandurriao - 2",

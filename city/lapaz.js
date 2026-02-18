@@ -4,7 +4,7 @@ intersections = [
     name: "Luna St - Huervana St",
     latitude: 10.707804,
     longitude: 122.567107,
-    connections: ["lapaz - 2", "lapaz - 3"], // [Capitol]
+    connections: ["lapaz - 2", "lapaz - 3" , "lapaz - 10"], 
   },
   {
     id: "lapaz- 2",
@@ -18,7 +18,7 @@ intersections = [
     name: "Luna St - Luna St",
     latitude: 10.709190,
     longitude: 122.568400,
-    connections: ["lapaz - 1", "lapaz - 2"], // [Nelly]
+    connections: ["lapaz - 1", "lapaz - 2", "jaro - 1"], 
   },
   {
     id: "lapaz - 4",
@@ -39,14 +39,14 @@ intersections = [
     name: "Huervana Ext - Burgos St",
     latitude: 10.713029,
     longitude: 122.570879,
-    connections: ["lapaz - 5", " lapaz - 7"], // [Jereos to Jaro]
+    connections: ["lapaz - 5", " lapaz - 7", "jaro - 3"],
   },  
   {
     id: "lapaz - 7",
     name: "Burgos St - Huervana St",
     latitude: 10.711777,
     longitude: 122.569511,
-    connections: ["lapaz - 4", " lapaz - 6"], // [Burgos to Jaro]
+    connections: ["lapaz - 4", " lapaz - 6", "jaro - 2"], 
   },
   {
     id: "lapaz - 8",
@@ -60,7 +60,7 @@ intersections = [
     name: "Baldoza St - Monfort Blvd",
     latitude: 10.713908,
     longitude: 122.581449,
-    connections: ["lapaz - 8", "lapuz - 7"], //[Monfort Blvd]
+    connections: ["lapaz - 8", "lapuz - 7", "jaro - 19"],
   },
   {
     id: "lapaz - 10",
@@ -72,14 +72,14 @@ intersections = [
 ];
 
 roads = [
-  // {
-  //     name: "Luna St",
-  //     A: "lapaz - 3",
-  //     B: "", //[Luna St, Jaro]
-  //     distance: ,
-  //     lanes: 2,
-  //     one_way: false,
-  // },
+  {
+      name: "Luna St",
+      A: "lapaz - 3",
+      B: "jaro - 1", //E Lopez St
+      distance: 800,
+      lanes: 2,
+      one_way: false,
+  },
   {
       name: "Luna St - Huervana St",
       A: "lapaz - 3",
@@ -176,30 +176,30 @@ roads = [
       lanes: 2,
       one_way: false,
   },
-  // {
-  //     name: "Monfort Blvd",
-  //     A: "lapaz - 9",
-  //     B: "", //Monfort [Jaro]
-  //     distance: ,
-  //     lanes: 2,
-  //     one_way: false,
-  // },
-  // {
-  //     name: "Burgos St",
-  //     A: "lapaz - 7",
-  //     B: "", //[Burgos, Jaro]
-  //     distance: ,
-  //     lanes: 2,
-  //     one_way: false,
-  // },
-  // {
-  //     name: "Jereos St",
-  //     A: "lapaz - 6",
-  //     B: "", //[Jereos, Jaro]
-  //     distance: ,
-  //     lanes: 2,
-  //     one_way: false,
-  // },
+  {
+      name: "Monfort Blvd",
+      A: "lapaz - 9",
+      B: "jaro - 19",
+      distance: 1800,
+      lanes: 2,
+      one_way: false,
+  },
+  {
+      name: "Burgos St",
+      A: "lapaz - 7",
+      B: "jaro - 2", // Commission Civil St
+      distance: 850,
+      lanes: 2,
+      one_way: false,
+  },
+  {
+      name: "Jereos St",
+      A: "lapaz - 6",
+      B: "jaro - 3", 
+      distance: 600,
+      lanes: 2,
+      one_way: false,
+  },
   {
       name: "Divinagracia St",
       A: "lapaz - 4",
