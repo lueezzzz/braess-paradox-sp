@@ -74,12 +74,28 @@ intersections = [
 roads = [
   // {
   //     name: "Luna St",
-  //     A: "lapaz - 10",
+  //     A: "lapaz - 3",
   //     B: "", //[Luna St, Jaro]
   //     distance: ,
   //     lanes: 2,
   //     one_way: false,
   // },
+  {
+      name: "Luna St - Huervana St",
+      A: "lapaz - 3",
+      B: "lapaz - 1", 
+      distance: 170,
+      lanes: 2,
+      one_way: false,
+  },
+  {
+      name: "Luna St - Esplanade 5",
+      A: "lapaz - 1",
+      B: "lapaz - 10", 
+      distance: 160,
+      lanes: 2,
+      one_way: false,
+  },
   {
       name: "Rizal St - Luna St",
       A: "lapaz - 2",
@@ -178,10 +194,18 @@ roads = [
   // },
   // {
   //     name: "Jereos St",
-  //     A: "lapaz - 5",
+  //     A: "lapaz - 6",
   //     B: "", //[Jereos, Jaro]
   //     distance: ,
   //     lanes: 2,
   //     one_way: false,
   // },
+  {
+      name: "Divinagracia St",
+      A: "lapaz - 4",
+      B: "lapuz - 1", 
+      distance: 450,
+      lanes: 2,
+      one_way: false,
+  },
 ];
