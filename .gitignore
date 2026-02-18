@@ -24,3 +24,5 @@ logs/
 # Temporary files
 *.tmp
 temp/
+
+bp_env/
