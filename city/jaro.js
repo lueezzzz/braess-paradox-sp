@@ -136,10 +136,90 @@ intersections = [
 
 roads = [
     {
-        name: "Monfort Blvd - ",
-        A: "jaro - 19",
+        name: "Monfort Blvd - Leganes",
+        A: "jaro - 11",
         B: "", //Dead End
-        distance: 4500,
+        distance: 3200,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Lapaz - Monfort Blvd",
+        A: "jaro - 19",
+        B: "jaro - 11", 
+        distance: 1300,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Iloilo Circumferential - Iloilo Radial By-Pass Rd 4",
+        A: "jaro - 15", 
+        B: "", //Dead End
+        distance: 3500,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Iloilo Radial By-Pass Rd 4 - Buhang Flyover",
+        A: "jaro - 15", 
+        B: "jaro - 13",
+        distance: 1100,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Buhang Flyover - Iloilo-Capiz Rd",
+        A: "jaro - 13", 
+        B: "jaro - 14",
+        distance: 190,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Iloilo-Capiz Rd - Buhang Flyover",
+        A: "jaro - 14", 
+        B: "jaro - 12",
+        distance: 220,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Buhang Flyover - Balabago Rd",
+        A: "jaro - 12", 
+        B: "jaro - 10",
+        distance: 1600,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Iloilo-Capiz Rd - Iloilo Circumferential Rd 1 - Monfort Blvd",
+        A: "jaro - 10", 
+        B: "jaro - 11",
+        distance: 40,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Old Iloilo-Capiz Rd - Iloilo-Capiz Rd",
+        A: "jaro - 17", 
+        B: "mandurriao - 1",
+        distance: 3100,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Old Iloilo-Capiz Rd - Old Lopez Jaena St",
+        A: "jaro - 17", 
+        B: "jaro - 16",
+        distance: 210,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Old Iloilo-Capiz Rd - Pavia",
+        A: "jaro - 16", 
+        B: "", //Dead End
+        distance: 550,
         lanes: 2,
         one_way: false,
     },
@@ -208,14 +288,6 @@ roads = [
         one_way: false,
     },
     {
-        name: "El 98 St",
-        A: "jaro - 7",
-        B: "jaro - 4", 
-        distance: 700,
-        lanes: 2,
-        one_way: false,
-    },
-    {
         name: "Plaza Rizal St - Balabago Rd",
         A: "jaro - 6",
         B: "jaro - 9", 
@@ -254,14 +326,6 @@ roads = [
         distance: 270,
         lanes: 1,
         one_way: true,
-    },
-    {
-        name: "Old Iloilo-Capiz Rd",
-        A: "mandurriao - 1",
-        B: "", // Dead End 
-        distance: 4100,
-        lanes: 2,
-        one_way: false,
     },
     {
         name: "El 98 St",
