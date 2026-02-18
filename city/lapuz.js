@@ -11,7 +11,7 @@ intersections = [
     name: "Rizal St - Quirino-Lopez Bridge",
     latitude: 10.7022611,
     longitude: 122.5714736,
-    connections: ["lapaz - 2", "lapuz - 4"], //["lapaz - 2", "lapuz - 4", quirino-lopez bridge]
+    connections: ["lapaz - 2", "lapuz - 4"], //+[quirino-lopez bridge]
   },
   {
     id: "lapuz - 3",
@@ -68,15 +68,39 @@ roads = [
     one_way: false,
   },
   {
-    name: "Rizal St - Lapuz-Mansaya-Loboc Rd",
+    name: "Rizal St - Huervana St",
     A: "lapaz - 2", 
-    B: "lapuz - 6",
-    distance: 1300,
+    B: "lapuz - 2",
+    distance: 850,
+    lanes: 2,
+    one_way: false,
+  },
+  {
+    name: "Rizal St - Abanilla St",
+    A: "lapuz - 2", 
+    B: "lapuz - 4",
+    distance: 450,
     lanes: 2,
     one_way: false,
   },
   {
     name: "Rizal St - New Iloilo Ferry Terminal Access Rd",
+    A: "lapuz - 4", 
+    B: "lapuz - 5",
+    distance: 160,
+    lanes: 2,
+    one_way: false,
+  },
+  {
+    name: "Rizal St - Iloilo Airport Direct Rd",
+    A: "lapuz - 5", 
+    B: "lapuz - 6",
+    distance: 700,
+    lanes: 2,
+    one_way: false,
+  },
+  {
+    name: "New Iloilo Ferry Terminal Access Rd",
     A: "lapuz - 5",
     B: "", //Dead End
     distance: 600,
@@ -87,6 +111,14 @@ roads = [
     name: "Rizal St - Iloilo Airport Direct Rd",
     A: "lapuz - 5",
     B: "", //Dead End
+    distance: 240,
+    lanes: 2,
+    one_way: false,
+  },
+  {
+    name: "Lapuz Mansaya Loboc Rd",
+    A: "lapuz - 6",
+    B: "lapuz - 7", 
     distance: 240,
     lanes: 2,
     one_way: false,

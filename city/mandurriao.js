@@ -4,7 +4,7 @@ intersections = [
         name: "Mandurriao - Jaro Rd - Old Iloilo - Capiz Rd",
         latitude: 10.719516,
         longitude: 122.552187,
-        connections: ["mandurriao - 2"], //["mandurriao - 2", Infante],
+        connections: ["mandurriao - 2", "jaro - 7", "jaro - 17"], 
     },
     {
         id: "mandurriao - 2",
@@ -35,6 +35,14 @@ roads = [
         A: "mandurriao - 3",
         B: "", //Dead - End
         distance: 200,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Pakiad Rd",
+        A: "mandurriao - 4",
+        B: "", //Dead - End
+        distance: 1600,
         lanes: 2,
         one_way: false,
     },
