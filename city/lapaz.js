@@ -69,13 +69,6 @@ intersections = [
     longitude: 122.567494,
     connections: ["lapaz - 1"], //[Bonifacio Dr, Lapuz]
   },
-  {
-    id: "lapaz - 11",
-    name: "Monfort Blvd",
-    latitude: 10.729156,
-    longitude: 122.579585,
-    connections: ["lapaz - 9"], 
-  },
 ];
 
 roads = [

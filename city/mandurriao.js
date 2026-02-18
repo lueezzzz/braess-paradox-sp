@@ -39,6 +39,14 @@ roads = [
         one_way: false,
     },
     {
+        name: "Pakiad Rd",
+        A: "mandurriao - 4",
+        B: "", //Dead - End
+        distance: 1600,
+        lanes: 2,
+        one_way: false,
+    },
+    {
         name: "R Mapa St",
         A: "mandurriao - 4",
         B: "", // To New Carpenter Bridge, Molo
