@@ -59,14 +59,14 @@ roads = [
         lanes: 2,
         one_way: false,
     },
-    // {
-    //     name: "Molo Blvd",
-    //     A: "villa - 5",
-    //     B: "Molo - 6",
-    //     distance: ,
-    //     lanes: 2,
-    //     one_way: false,
-    // },
+    {
+        name: "Molo Blvd",
+        A: "villa - 5",
+        B: "Molo - 6",
+        distance: 6600,
+        lanes: 2,
+        one_way: false,
+    },
     {
         name: "Yulo Dr",
         A: "villa - 1",
