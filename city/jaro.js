@@ -74,7 +74,7 @@ intersections = [
         name: "Iloilo Circumferential Rd 1 - Monfort Blvd",
         latitude: 10.740566,
         longitude: 122.582805,
-        connections: ["jaro - 10", "jaro - 19"], 
+        connections: ["jaro - 10", "jaro - 19", "jaro - 20"], 
     },
     {
         id: "jaro - 12",
@@ -95,21 +95,21 @@ intersections = [
         name: "Iloilo-Capiz Rd - Iloilo Circumferential Rd 1",
         latitude: 10.749916,
         longitude: 122.569760,
-        connections: ["jaro - 9", "jaro - 12", "jaro - 13"], 
+        connections: ["jaro - 9", "jaro - 12", "jaro - 13", "jaro - 21"], 
     },
     {
         id: "jaro - 15",
         name: "Iloilo Circumferential Rd 1 - Iloilo Radial By-Pass Rd 4",
         latitude: 10.753597,
         longitude: 122.559114,
-        connections: ["jaro - 13"], 
+        connections: ["jaro - 13", "jaro - 22", "jaro - 23"], 
     },
     {
         id: "jaro - 16",
         name: "Old Lopez Jaena St - Old Iloilo-Capiz Rd",
         latitude: 10.743941,
         longitude: 122.539561,
-        connections: ["jaro - 17", "jaro - 18"], 
+        connections: ["jaro - 17", "jaro - 18", "jaro - 24"], 
     },
     {
         id: "jaro - 17",
@@ -132,13 +132,48 @@ intersections = [
         longitude: 122.579585,
         connections: ["jaro - 11", "lapaz - 9"], 
     },
+    {
+        id: "jaro - 20",
+        name: "Coastal Rd - Leganes",
+        latitude: 10.765329,
+        longitude: 122.596838,
+        connections: ["jaro - 11",], 
+    },
+    {
+        id: "jaro - 21",
+        name: "Iloilo R4 Rd - Leganes",
+        latitude: 10.776338,
+        longitude: 122.584777,
+        connections: ["jaro - 14",], 
+    },
+    {
+        id: "jaro - 22",
+        name: "Iloilo Radial By-Pass Rd 4 - Leganes",
+        latitude: 10.782099,
+        longitude: 122.573353,
+        connections: ["jaro - 15",], 
+    },
+    {
+        id: "jaro - 23",
+        name: "Iloilo Circumferential Rd 1 - Pavia",
+        latitude: 10.750579,
+        longitude: 122.540739,
+        connections: ["jaro - 15",], 
+    },
+    {
+        id: "jaro - 24",
+        name: "Old Iloilo-Capiz Rd - Pavia",
+        latitude: 10.749019,
+        longitude: 122.539001,
+        connections: ["jaro - 16",], 
+    },
 ]
 
 roads = [
     {
         name: "Monfort Blvd - Leganes",
         A: "jaro - 11",
-        B: "", //Dead End
+        B: "jaro - 20", //Dead End
         distance: 3200,
         lanes: 2,
         one_way: false,
@@ -154,7 +189,7 @@ roads = [
     {
         name: "Iloilo Circumferential - Iloilo Radial By-Pass Rd 4",
         A: "jaro - 15", 
-        B: "", //Dead End
+        B: "jaro - 22", //Dead End
         distance: 3500,
         lanes: 2,
         one_way: false,
@@ -218,7 +253,7 @@ roads = [
     {
         name: "Old Iloilo-Capiz Rd - Pavia",
         A: "jaro - 16", 
-        B: "", //Dead End
+        B: "jaro - 24", //Dead End
         distance: 550,
         lanes: 2,
         one_way: false,
@@ -226,7 +261,7 @@ roads = [
     {
         name: "Iloilo-Capiz Rd - Iloilo Circumferential Rd 1",
         A: "jaro - 14",
-        B: "", //Dead End
+        B: "jaro - 21", //Dead End
         distance: 3300,
         lanes: 2,
         one_way: false,
@@ -234,7 +269,7 @@ roads = [
     {
         name: "Iloilo Radial By-Pass Rd 4",
         A: "jaro - 15",
-        B: "", //Dead End
+        B: "jaro - 23", //Dead End
         distance: 3500,
         lanes: 2,
         one_way: false,
@@ -266,7 +301,7 @@ roads = [
     {
         name: "Jereos St",
         A: "jaro - 3",
-        B: "", // Dead End
+        B: "jaro - 25", // Dead End
         distance: 210,
         lanes: 2,
         one_way: false,
@@ -274,7 +309,7 @@ roads = [
     {
         name: "Commission Civil St",
         A: "jaro - 2",
-        B: "jaro - 9", 
+        B: "jaro - 5", 
         distance: 1000,
         lanes: 2,
         one_way: false,
@@ -312,10 +347,18 @@ roads = [
         one_way: true,
     },
     {
-        name: "Lopez Jaena St - Old Iloilo-Capiz Rd",
+        name: "Lopez Jaena St - Old Lopez Jaena St",
         A: "jaro - 8",
+        B: "jaro - 18", 
+        distance: 2300,
+        lanes: 2,
+        one_way: false,
+    },
+    {
+        name: "Old Lopez Jaena St - Old Iloilo-Capiz Rd",
+        A: "jaro - 18",
         B: "jaro - 17", 
-        distance: 2400,
+        distance: 100,
         lanes: 2,
         one_way: false,
     },
