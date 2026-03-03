@@ -63,7 +63,7 @@ roads = [
     A: "lapuz - 1",
     B: "lapuz - 3",
     distance: 550,
-    lanes: 2,
+    lanes: 1,
     one_way: false,
   },
   {
@@ -87,7 +87,7 @@ roads = [
     A: "lapuz - 4", 
     B: "lapuz - 5",
     distance: 600,
-    lanes: 2,
+    lanes: 3,
     one_way: false,
   },
   {
@@ -111,7 +111,7 @@ roads = [
     A: "lapuz - 6",
     B: "lapuz - 8", 
     distance: 240,
-    lanes: 2,
+    lanes: 1,
     one_way: false,
   },
 ];

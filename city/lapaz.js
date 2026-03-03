@@ -101,7 +101,7 @@ roads = [
       A: "lapaz - 2",
       B: "lapaz - 3", 
       distance: 160,
-      lanes: 1,
+      lanes: 4,
       one_way: true,
   },
   {
@@ -109,7 +109,7 @@ roads = [
       A: "lapaz - 1",
       B: "lapaz - 2",
       distance: 110,
-      lanes: 1,
+      lanes: 4,
       one_way: true,
   },
   {
@@ -125,7 +125,7 @@ roads = [
       A: "lapaz - 4",
       B: "lapaz - 5",
       distance: 210,
-      lanes: 1,
+      lanes: 4,
       one_way: true,
   },
   {
@@ -133,7 +133,7 @@ roads = [
       A: "lapaz - 5",
       B: "lapaz - 6",
       distance: 200,
-      lanes: 1,
+      lanes: 4,
       one_way: true,
   },
   {
@@ -141,7 +141,7 @@ roads = [
       A: "lapaz - 6",
       B: "lapaz - 7",
       distance: 210,
-      lanes: 1,
+      lanes: 3,
       one_way: true,
   },
   {
@@ -149,7 +149,7 @@ roads = [
       A: "lapaz - 7",
       B: "lapaz - 4",
       distance: 180,
-      lanes: 1,
+      lanes: 4,
       one_way: true,
   },
   {
@@ -189,7 +189,7 @@ roads = [
       A: "lapaz - 7",
       B: "jaro - 2", // Commission Civil St
       distance: 850,
-      lanes: 2,
+      lanes: 1,
       one_way: false,
   },
   {
@@ -197,7 +197,7 @@ roads = [
       A: "lapaz - 6",
       B: "jaro - 3", 
       distance: 600,
-      lanes: 2,
+      lanes: 1,
       one_way: false,
   },
   {
@@ -205,7 +205,7 @@ roads = [
       A: "lapaz - 4",
       B: "lapuz - 1", 
       distance: 450,
-      lanes: 2,
+      lanes: 1,
       one_way: false,
   },
 ];

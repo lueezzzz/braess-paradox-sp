@@ -83,6 +83,20 @@ intersections = [
         longitude: 122.517041,
         connections: ["mandurriao - 3", "mandurriao - 9", "mandurriao - 10", "mandurriao - 11"],
     },
+    {
+        id: "mandurriao - 13",
+        name: "Jibao-an Flyover 1",
+        latitude: 10.741934,
+        longitude: 122.518882,
+        connections: ["mandurriao - 12", "mandurriao - 11"],
+    },
+    {
+        id: "mandurriao - 14",
+        name: "Jibao-an Flyover 2",
+        latitude: 10.738919,
+        longitude: 122.515258,
+        connections: ["mandurriao - 12", "mandurriao - 10"],
+    },
 ]
 
 roads = [
@@ -131,7 +145,7 @@ roads = [
         A: "mandurriao - 2",
         B: "mandurriao - 3",
         distance: 290,
-        lanes: 1,
+        lanes: 2,
         one_way: true,
     },
     {
@@ -139,7 +153,7 @@ roads = [
         A: "mandurriao - 3",
         B: "mandurriao - 4",
         distance: 350,
-        lanes: 1,
+        lanes: 4,
         one_way: true,
     },
     {
@@ -147,7 +161,7 @@ roads = [
         A: "mandurriao - 4",
         B: "mandurriao - 2",
         distance: 170,
-        lanes: 1,
+        lanes: 2,
         one_way: true,
     },
     {
@@ -160,9 +174,17 @@ roads = [
     },
     {
         name: "Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (1)",
-        A: "mandurriao - 10",
+        A: "mandurriao - 14",
         B: "mandurriao - 12",
-        distance: 450,
+        distance: 230,
+        lanes: 2,
+        one_way: false, 
+    },
+    {
+        name: "Iloilo Circumferential Rd 1 - Jibao-an Fly-over",
+        A: "mandurriao - 10",
+        B: "mandurriao - 14",
+        distance: 220,
         lanes: 2,
         one_way: false, 
     },
@@ -172,6 +194,14 @@ roads = [
         B: "mandurriao - 12",
         distance: 400,
         lanes: 2,
+        one_way: false, 
+    },
+    {
+        name: "Jibao-an Fly-over",
+        A: "mandurriao - 13",
+        B: "mandurriao - 14",
+        distance: 550,
+        lanes: 1,
         one_way: false, 
     },
 ]

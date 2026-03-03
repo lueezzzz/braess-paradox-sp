@@ -207,7 +207,7 @@ roads = [
         A: "jaro - 13", 
         B: "jaro - 14",
         distance: 190,
-        lanes: 2,
+        lanes: 1,
         one_way: false,
     },
     {
@@ -215,7 +215,7 @@ roads = [
         A: "jaro - 14", 
         B: "jaro - 12",
         distance: 220,
-        lanes: 2,
+        lanes: 1,
         one_way: false,
     },
     {
@@ -230,8 +230,8 @@ roads = [
         name: "Iloilo-Capiz Rd - Iloilo Circumferential Rd 1 - Monfort Blvd",
         A: "jaro - 10", 
         B: "jaro - 11",
-        distance: 40,
-        lanes: 2,
+        distance: 35,
+        lanes: 1,
         one_way: false,
     },
     {
@@ -239,7 +239,7 @@ roads = [
         A: "jaro - 17", 
         B: "mandurriao - 1",
         distance: 3100,
-        lanes: 2,
+        lanes: 4,
         one_way: false,
     },
     {
@@ -247,7 +247,7 @@ roads = [
         A: "jaro - 17", 
         B: "jaro - 16",
         distance: 210,
-        lanes: 2,
+        lanes: 4,
         one_way: false,
     },
     {
@@ -255,7 +255,7 @@ roads = [
         A: "jaro - 16", 
         B: "jaro - 24", //Dead End
         distance: 550,
-        lanes: 2,
+        lanes: 4,
         one_way: false,
     },
     {
@@ -287,7 +287,7 @@ roads = [
         A: "jaro - 12",
         B: "jaro - 13", 
         distance: 450,
-        lanes: 2,
+        lanes: 1,
         one_way: false,
     },
     {
@@ -303,7 +303,7 @@ roads = [
         A: "jaro - 3",
         B: "jaro - 25", // Dead End
         distance: 210,
-        lanes: 2,
+        lanes: 1,
         one_way: false,
     },
     {
@@ -311,7 +311,7 @@ roads = [
         A: "jaro - 2",
         B: "jaro - 5", 
         distance: 1000,
-        lanes: 2,
+        lanes: 1,
         one_way: false,
     },
     {
@@ -335,7 +335,7 @@ roads = [
         A: "jaro - 9",
         B: "jaro - 8", 
         distance: 500,
-        lanes: 1,
+        lanes: 2,
         one_way: true,
     },
     {
@@ -343,7 +343,7 @@ roads = [
         A: "jaro - 8",
         B: "jaro - 6", 
         distance: 260,
-        lanes: 1,
+        lanes: 3,
         one_way: true,
     },
     {
@@ -351,7 +351,7 @@ roads = [
         A: "jaro - 8",
         B: "jaro - 18", 
         distance: 2300,
-        lanes: 2,
+        lanes: 1,
         one_way: false,
     },
     {
@@ -367,7 +367,7 @@ roads = [
         A: "jaro - 18",
         B: "jaro - 16", 
         distance: 270,
-        lanes: 1,
+        lanes: 2,
         one_way: true,
     },
     {
@@ -383,7 +383,7 @@ roads = [
         A: "jaro - 7",
         B: "jaro - 4", 
         distance: 190,
-        lanes: 1,
+        lanes: 4,
         one_way: true,
     },
     {
@@ -391,7 +391,7 @@ roads = [
         A: "jaro - 4",
         B: "jaro - 5", 
         distance: 120,
-        lanes: 1,
+        lanes: 4,
         one_way: true,
     },
     {
@@ -399,7 +399,7 @@ roads = [
         A: "jaro - 5",
         B: "jaro - 6", 
         distance: 230,
-        lanes: 1,
+        lanes: 4,
         one_way: true,
     },
     {
@@ -407,7 +407,7 @@ roads = [
         A: "jaro - 6",
         B: "jaro - 7", 
         distance: 160,
-        lanes: 1,
+        lanes: 5,
         one_way: true,
     },
 ]

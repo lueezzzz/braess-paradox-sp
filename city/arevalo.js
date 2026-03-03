@@ -64,7 +64,7 @@ roads = [
         A: "villa - 5",
         B: "Molo - 6",
         distance: 6600,
-        lanes: 2,
+        lanes: 1,
         one_way: false,
     },
     {
@@ -112,7 +112,7 @@ roads = [
         A: "villa - 7",
         B: "villa - 6",
         distance: 120,
-        lanes: 2,
+        lanes: 1,
         one_way: false,
     },
 ]
