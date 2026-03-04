@@ -1,3 +1,5 @@
+import csv
+
 intersections = [
     # AREVALO / VILLA
     {
@@ -1484,3 +1486,19 @@ roads = [
         "name": "Iloilo Airport Direct Rd",
     },
 ]
+
+with open("intersections.csv", "w", newline="", encoding="utf-8") as file:
+    intersection_headers = ["id", "y", "x", "name"]
+    writer = csv.DictWriter(file, fieldnames=intersection_headers)
+
+    writer.writeheader()
+    writer.writerows(intersections)
+
+with open("roads.csv", "w", newline="", encoding="utf-8") as file:
+    road_headers = ["A", "B", "distance", "lanes", "oneway", "name"]
+    writer = csv.DictWriter(file, fieldnames=road_headers)
+
+    writer.writeheader()
+    writer.writerows(roads)
+
+
