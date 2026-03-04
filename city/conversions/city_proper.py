@@ -426,4 +426,20 @@ roads = [
         "lanes": 2,
         "one_way": True,
     },
+    {
+        "name": "Bonifacio Drive",
+        "A": "Proper - 7",
+        "B": "lapaz - 10",
+        "distance": 500,
+        "lanes": 2,
+        "one_way": False,
+    },
+    {
+        "name": "Quirino - Lopez Bridge",
+        "A": "Proper - 9",
+        "B": "lapuz - 2",
+        "distance": 200,
+        "lanes": 2,
+        "one_way": False,
+    },
 ]
