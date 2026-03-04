@@ -16,8 +16,8 @@ intersections = [
     {
         "id": "lapaz - 3",
         "name": "Luna St - Luna St",
-        "latitude": 10.709190,
-        "longitude": 122.568400,
+        "latitude": 10.709233,
+        "longitude": 122.566694,
         "connections": ["lapaz - 1", "lapaz - 2", "jaro - 1"],
     },
     {
@@ -51,8 +51,8 @@ intersections = [
     {
         "id": "lapaz - 8",
         "name": "Lopez Jaena St - Baldoza St",
-        "latitude": 10.714284,
-        "longitude": 122.572201,
+        "latitude": 10.714306,
+        "longitude": 122.575493,
         "connections": ["lapaz - 5", "lapaz - 9"],
     },
     {
