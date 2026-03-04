@@ -39,14 +39,14 @@ intersections = [
     name: "Jereos St - Huervana Ext",
     latitude: 10.713029,
     longitude: 122.570879,
-    connections: ["lapaz - 5", " lapaz - 7", "jaro - 3"],
+    connections: ["lapaz - 5", "lapaz - 7", "jaro - 3"],
   },  
   {
     id: "lapaz - 7",
     name: "Huervana Ext - Burgos St",
     latitude: 10.711777,
     longitude: 122.569511,
-    connections: ["lapaz - 4", " lapaz - 6", "jaro - 2"], 
+    connections: ["lapaz - 4", "lapaz - 6", "jaro - 2"], 
   },
   {
     id: "lapaz - 8",

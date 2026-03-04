@@ -99,6 +99,14 @@ roads = [
         lanes: 2,
         one_way: false
     },
+        {
+        name: "Molo - 4 -> Molo - 8",
+        A: "Molo - 4",
+        B: "Molo - 8",
+        distance: 650,
+        lanes: 2,
+        one_way: false
+    },
     {
         name: "Molo - 5 -> Molo - 6",
         A: "Molo - 5",
