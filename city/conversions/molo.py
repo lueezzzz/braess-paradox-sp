@@ -93,7 +93,7 @@ roads = [
         "A": "Molo - 3",
         "B": "villa - 3",
         "distance": 2100,
-        "lanes": 4,
+        "lanes": 2,
         "one_way": False,
     },
     {
@@ -125,7 +125,7 @@ roads = [
         "A": "Molo - 5",
         "B": "Molo - 6",
         "distance": 500,
-        "lanes": 4,
+        "lanes": 2,
         "one_way": False,
     },
     {
@@ -133,7 +133,7 @@ roads = [
         "A": "Molo - 7",
         "B": "Molo - 8",
         "distance": 16,
-        "lanes": 4,
+        "lanes": 2,
         "one_way": True,
     },
     {
@@ -165,7 +165,7 @@ roads = [
         "A": "Molo - 10",
         "B": "Proper - 1",
         "distance": 500,
-        "lanes": 4,
+        "lanes": 2,
         "one_way": True,
     },
     {
@@ -175,5 +175,13 @@ roads = [
         "distance": 38,
         "lanes": 1,
         "one_way": True,
+    },
+    {
+        "name": "Proper - 1 -> Molo - 7",
+        "A": "Proper - 1",
+        "B": "Molo - 7",
+        "distance": 550,
+        "lanes": 4,
+        "oneway": True,
     },
 ]
