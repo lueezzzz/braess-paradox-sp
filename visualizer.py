@@ -21,21 +21,19 @@ for node in intersections:
     G.add_node(node["id"], x=node["x"], y=node["y"])
 
 roads = [
-    {"A": "Molo - 3", "B": "villa - 3", "distance": 2100, "oneway": False},
-    {"A": "Molo - 3", "B": "Molo - 4", "distance": 190, "oneway": False},
-    {"A": "Molo - 4", "B": "Molo - 5", "distance": 220, "oneway": False},
-    {"A": "Molo - 4", "B": "Molo - 9", "distance": 550, "oneway": False},
-    {"A": "Molo - 5", "B": "Molo - 6", "distance": 500, "oneway": False},
-    {"A": "Molo - 8", "B": "Molo - 3", "distance": 700, "oneway": True},
-    {"A": "Proper - 1", "B": "Molo - 7", "distance": 550, "oneway": True},
-    {"A": "Molo - 7", "B": "Molo - 8", "distance": 16, "oneway": False},
-    {"A": "Molo - 8", "B": "Molo - 3", "distance": 700, "oneway": True},
-    {"A": "Molo - 8", "B": "Molo - 9", "distance": 42, "oneway": True},
-    {"A": "Molo - 10", "B": "Proper - 1", "distance": 500, "oneway": True},
-    {"A": "Molo - 9", "B": "Molo - 10", "distance": 20, "oneway": True},
-    {"A": "Molo - 10", "B": "Molo - 7", "distance": 38, "oneway": True},
+    {"A": "Molo - 3", "B": "villa - 3", "distance": 2100, "lanes": 4, "oneway": False},
+    {"A": "Molo - 3", "B": "Molo - 4", "distance": 190, "lanes": 2, "oneway": False},
+    {"A": "Molo - 4", "B": "Molo - 5", "distance": 220, "lanes": 2, "oneway": False},
+    {"A": "Molo - 4", "B": "Molo - 9", "distance": 650, "lanes": 2, "oneway": False},
+    {"A": "Molo - 5", "B": "Molo - 6", "distance": 500, "lanes": 4, "oneway": False},
+    {"A": "Molo - 7", "B": "Molo - 8", "distance": 16, "lanes": 4, "oneway": True},
+    {"A": "Molo - 8", "B": "Molo - 3", "distance": 700, "lanes": 4, "oneway": True},
+    {"A": "Molo - 8", "B": "Molo - 9", "distance": 42, "lanes": 1, "oneway": True},
+    {"A": "Molo - 9", "B": "Molo - 10", "distance": 20, "lanes": 4, "oneway": True},
+    {"A": "Molo - 10", "B": "Proper - 1", "distance": 500, "lanes": 4, "oneway": True},
+    {"A": "Molo - 10", "B": "Molo - 7", "distance": 38, "lanes": 1, "oneway": True},
+    {"A": "Proper - 1", "B": "Molo - 7", "distance": 550, "lanes": 4, "oneway": True}
 ]
-
 
 for road in roads:
     G.add_edge(road["A"], road["B"], length=road["distance"])
