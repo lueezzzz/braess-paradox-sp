@@ -167,6 +167,13 @@ intersections = [
         "longitude": 122.539001,
         "connections": ["jaro - 16"],
     },
+    {
+        "id": "jaro - 25",
+        "name": "Jereos St",
+        "latitude": 10.720615,
+        "longitude": 122.565701,
+        "connections": ["jaro - 3"],
+    },
 ]
 
 roads = [

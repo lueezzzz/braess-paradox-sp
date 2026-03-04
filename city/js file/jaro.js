@@ -167,6 +167,13 @@ intersections = [
         longitude: 122.539001,
         connections: ["jaro - 16",], 
     },
+    {
+        id: "jaro - 24",
+        name: "Old Iloilo-Capiz Rd - Pavia",
+        latitude: 10.749019,
+        longitude: 122.539001,
+        connections: ["jaro - 3",], 
+    },
 ]
 
 roads = [
