@@ -48,28 +48,43 @@ intersections = [
     latitude: 10.699243,
     longitude: 122.549363,
     connections: ["Molo - 3", "Proper - 1"],
-  }, 
+  },
+  {
+    id: "Molo - 8",
+    name: "M.H Del Pilar St. 2",
+    latitude: 10.698916,
+    longitude: 122.549449,
+    connections: ["Molo - 3", "Proper - 1"],
+  },
 ];
 
 roads = [
-    {
-        name: "Locsin St. 1",
-        A: "Molo - 1",
-        B: "Molo - 2",
-        distance: 120,
-        lanes: 2,
+    // {
+    //     name: "Locsin St. 1",
+    //     A: "Molo - 1",
+    //     B: "Molo - 2",
+    //     distance: 120,
+    //     lanes: 2,
+    //     one_way: false,
+    // },
+    // {
+    //     name: "Locsin St. 2",
+    //     A: "Molo - 2",
+    //     B: "Molo - 3",
+    //     distance: 110,
+    //     lanes: 2,
+    //     one_way: false,
+    // },
+        {
+        name: "Molo - 3 -> Villa - 3",
+        A: "Molo - 3",
+        B: "villa - 3",
+        distance: 2100,
+        lanes: 4,
         one_way: false,
     },
     {
-        name: "Locsin St. 2",
-        A: "Molo - 2",
-        B: "Molo - 3",
-        distance: 110,
-        lanes: 2,
-        one_way: false,
-    },
-    {
-        name: "Locsin St. 3",
+        name: "Molo - 3 -> Molo - 4",
         A: "Molo - 3",
         B: "Molo - 4",
         distance: 190,
@@ -77,7 +92,7 @@ roads = [
         one_way: false,
     },
     {
-        name: "Locsin St. 4",
+        name: "Molo - 4 -> Molo - 5",
         A: "Molo - 4",
         B: "Molo - 5",
         distance: 220,
@@ -85,7 +100,7 @@ roads = [
         one_way: false
     },
     {
-        name: "Locsin St. 5",
+        name: "Molo - 5 -> Molo - 6",
         A: "Molo - 5",
         B: "Molo - 6",
         distance: 500,
@@ -93,10 +108,18 @@ roads = [
         one_way: false,
     },
     {
-        name: "MH Del Pilar St -> Locsin",
+        name: "Molo - 7 -> Molo - 3",
         A: "Molo - 7",
         B: "Molo - 3",
         distance: 700,
+        lanes: 4,
+        one_way: true,
+    },
+        {
+        name: "Molo - 8 -> Proper - 1",
+        A: "Molo - 8",
+        B: "Proper - 1",
+        distance: 550,
         lanes: 4,
         one_way: true,
     }
