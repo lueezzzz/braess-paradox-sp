@@ -5,34 +5,33 @@ G = nx.MultiDiGraph()
 G.graph["crs"] = "EPSG:4326"
 
 intersections = [
-    {"id": "Molo - 3", "y": 10.697347, "x": 122.543396},
-    {"id": "Molo - 4", "y": 10.695993, "x": 122.544452},
-    {"id": "Molo - 5", "y": 10.694449, "x": 122.545638},
-    {"id": "Molo - 6", "y": 10.692042, "x": 122.549359},
-    {"id": "Molo - 7", "y": 10.699246, "x": 122.549446},
-    {"id": "Molo - 8", "y": 10.699231, "x": 122.549295},
-    {"id": "Molo - 9", "y": 10.698880, "x": 122.549361},
-    {"id": "Molo - 10", "y": 10.698959, "x": 122.549522},
-    {"id": "villa - 3", "y": 10.688897, "x": 122.516400},
-    {"id": "Proper - 1", "y": 10.699766, "x": 122.554176},
+    {"id": "lapaz - 1", "y": 10.707804, "x": 122.567107},
+    {"id": "lapaz - 2", "y": 10.708378, "x": 122.567858},
+    {"id": "lapaz - 3", "y": 10.709233, "x": 122.566694},
+    {"id": "lapaz - 4", "y": 10.710460, "x": 122.570379},
+    {"id": "lapaz - 5", "y": 10.711606, "x": 122.571909},
+    {"id": "lapaz - 6", "y": 10.713029, "x": 122.570879},
+    {"id": "lapaz - 7", "y": 10.711777, "x": 122.569511},
+    {"id": "lapaz - 8", "y": 10.714306, "x": 122.575493},
+    {"id": "lapaz - 9", "y": 10.713908, "x": 122.581449},
+    {"id": "lapaz - 10", "y": 10.706364, "x": 122.567494},
 ]
 
 for node in intersections:
     G.add_node(node["id"], x=node["x"], y=node["y"])
 
 roads = [
-    {"A": "Molo - 3", "B": "villa - 3", "distance": 2100, "lanes": 4, "oneway": False},
-    {"A": "Molo - 3", "B": "Molo - 4", "distance": 190, "lanes": 2, "oneway": False},
-    {"A": "Molo - 4", "B": "Molo - 5", "distance": 220, "lanes": 2, "oneway": False},
-    {"A": "Molo - 4", "B": "Molo - 9", "distance": 650, "lanes": 2, "oneway": False},
-    {"A": "Molo - 5", "B": "Molo - 6", "distance": 500, "lanes": 4, "oneway": False},
-    {"A": "Molo - 7", "B": "Molo - 8", "distance": 16, "lanes": 4, "oneway": True},
-    {"A": "Molo - 8", "B": "Molo - 3", "distance": 700, "lanes": 4, "oneway": True},
-    {"A": "Molo - 8", "B": "Molo - 9", "distance": 42, "lanes": 1, "oneway": True},
-    {"A": "Molo - 9", "B": "Molo - 10", "distance": 20, "lanes": 4, "oneway": True},
-    {"A": "Molo - 10", "B": "Proper - 1", "distance": 500, "lanes": 4, "oneway": True},
-    {"A": "Molo - 10", "B": "Molo - 7", "distance": 38, "lanes": 1, "oneway": True},
-    {"A": "Proper - 1", "B": "Molo - 7", "distance": 550, "lanes": 4, "oneway": True}
+    {"A": "lapaz - 3", "B": "lapaz - 1", "distance": 170, "lanes": 2, "oneway": False},
+    {"A": "lapaz - 1", "B": "lapaz - 10", "distance": 160, "lanes": 2, "oneway": False},
+    {"A": "lapaz - 2", "B": "lapaz - 3", "distance": 160, "lanes": 4, "oneway": True},
+    {"A": "lapaz - 1", "B": "lapaz - 2", "distance": 110, "lanes": 4, "oneway": True},
+    {"A": "lapaz - 2", "B": "lapaz - 4", "distance": 350, "lanes": 2, "oneway": False},
+    {"A": "lapaz - 4", "B": "lapaz - 5", "distance": 210, "lanes": 4, "oneway": True},
+    {"A": "lapaz - 5", "B": "lapaz - 6", "distance": 200, "lanes": 4, "oneway": True},
+    {"A": "lapaz - 6", "B": "lapaz - 7", "distance": 210, "lanes": 3, "oneway": True},
+    {"A": "lapaz - 7", "B": "lapaz - 4", "distance": 180, "lanes": 4, "oneway": True},
+    {"A": "lapaz - 5", "B": "lapaz - 8", "distance": 500, "lanes": 2, "oneway": False},
+    {"A": "lapaz - 8", "B": "lapaz - 9", "distance": 650, "lanes": 2, "oneway": False},
 ]
 
 for road in roads:
