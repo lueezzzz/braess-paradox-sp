@@ -11,7 +11,7 @@ intersections = [
         "name": "Rizal St - Quirino-Lopez Bridge",
         "latitude": 10.7022611,
         "longitude": 122.5714736,
-        "connections": ["lapaz - 2", "lapuz - 4"],  # +[quirino-lopez bridge]
+        "connections": ["lapaz - 2", "lapuz - 4"], 
     },
     {
         "id": "lapuz - 3",
