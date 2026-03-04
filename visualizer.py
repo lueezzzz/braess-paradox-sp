@@ -1,5 +1,6 @@
 import osmnx as ox
 import networkx as nx
+from city.final_network import intersections, roads
 
 G = nx.MultiDiGraph()
 G.graph["crs"] = "EPSG:4326"
