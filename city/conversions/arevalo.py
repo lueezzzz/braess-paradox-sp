@@ -23,8 +23,8 @@ intersections = [
     {
         "id": "villa - 4",
         "name": "Quezon St - Yulo Dr",
-        "latitude": 10.688957,
-        "longitude": 122.521095,
+        "latitude": 10.687044,
+        "longitude": 122.516604,
         "connections": ["villa - 1", "villa - 3"],
     },
     {
