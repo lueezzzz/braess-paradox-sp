@@ -277,7 +277,6 @@ intersections = [
         "name": "Iloilo Circumferential Rd 1",
     },
     # JARO
-    # JARO
     {"id": "jaro - 1", "y": 10.715677, "x": 122.562659, "name": "E Lopez St - Luna St"},
     {
         "id": "jaro - 2",
@@ -397,7 +396,11 @@ intersections = [
         "x": 122.539001,
         "name": "Old Iloilo-Capiz Rd - Pavia",
     },
-    {"id": "jaro - 25", "y": 10.720615, "x": 122.565701, "name": "Jereos St"},
+    {   "id": "jaro - 25",
+        "y": 10.720615,
+        "x": 122.565701,
+        "name": "Jereos St"
+    },
     # LAPAZ
     {
         "id": "lapaz - 1",
@@ -405,8 +408,16 @@ intersections = [
         "x": 122.567107,
         "name": "Luna St - Huervana St",
     },
-    {"id": "lapaz - 2", "y": 10.708378, "x": 122.567858, "name": "Rizal St - Luna St"},
-    {"id": "lapaz - 3", "y": 10.709233, "x": 122.566694, "name": "Luna St - Luna St"},
+    {   "id": "lapaz - 2", 
+        "y": 10.708378, 
+        "x": 122.567858, 
+        "name": "Rizal St - Luna St"
+     },
+    {   "id": "lapaz - 3", 
+        "y": 10.709233,
+        "x": 122.566694,
+        "name": "Luna St - Luna St"
+     },
     {
         "id": "lapaz - 4",
         "y": 10.710460,
@@ -511,6 +522,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Osmena St",
+        "speed": 40,
     },
     {
         "A": "villa - 1",
@@ -519,6 +531,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Yulo Dr",
+        "speed": 40,
     },
     {
         "A": "villa - 3",
@@ -527,6 +540,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Quezon St",
+        "speed": 40,
     },
     {
         "A": "villa - 1",
@@ -535,6 +549,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Jocson St",
+        "speed": 40,
     },
     {
         "A": "villa - 2",
@@ -543,6 +558,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Circumferential Rd 1",
+        "speed": 40,
     },
     {
         "A": "villa - 7",
@@ -551,6 +567,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Pakiad Rd",
+        "speed": 40,
     },
     {
         "A": "villa - 2",
@@ -559,6 +576,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Iloilo Circumferential Rd 1",
+        "speed": 70,
     },
     # Molo Internal & District Connections
     {
@@ -568,6 +586,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Molo - Arevalo Connect",
+        "speed": 40,
     },
     {
         "A": "Molo - 3",
@@ -576,6 +595,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Locsin St",
+        "speed": 40,
     },
     {
         "A": "Molo - 4",
@@ -584,6 +604,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Locsin St",
+        "speed": 40,
     },
     {
         "A": "Molo - 4",
@@ -592,6 +613,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "M.H Del Pilar",
+        "speed": 40,
     },
     {
         "A": "Molo - 5",
@@ -600,6 +622,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Locsin St",
+        "speed": 40,
     },
     {
         "A": "Molo - 7",
@@ -608,6 +631,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Rotunda",
+        "speed": 40,
     },
     {
         "A": "Molo - 8",
@@ -616,6 +640,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "San Marcos St",
+        "speed": 40,
     },
     {
         "A": "Molo - 8",
@@ -624,6 +649,7 @@ roads = [
         "lanes": 1,
         "oneway": True,
         "name": "M.H Del Pilar",
+        "speed": 40,
     },
     {
         "A": "Molo - 9",
@@ -632,6 +658,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "M.H Del Pilar",
+        "speed": 40,
     },
     {
         "A": "Molo - 10",
@@ -640,6 +667,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Molo - Proper Connect",
+        "speed": 40,
     },
     {
         "A": "Molo - 10",
@@ -648,6 +676,7 @@ roads = [
         "lanes": 1,
         "oneway": True,
         "name": "M.H Del Pilar",
+        "speed": 40,
     },
     {
         "A": "Proper - 1",
@@ -656,6 +685,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "Gen Luna - Molo Connect",
+        "speed": 40,
     },
     {
         "A": "Molo - 6",
@@ -664,6 +694,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Molo Blvd",
+        "speed": 40,
     },
     {
         "A": "Molo - 5",
@@ -672,6 +703,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Timawa St",
+        "speed": 40,
     },
     {
         "A": "Molo - 6",
@@ -680,6 +712,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Molo Blvd 2",
+        "speed": 40,
     },
     {
         "A": "Molo - 3",
@@ -688,6 +721,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "New Carpenter Bridge",
+        "speed": 40,
     },
     # City Proper Internal
     {
@@ -697,6 +731,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Infante St 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 2",
@@ -705,6 +740,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Infante St 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 3",
@@ -713,6 +749,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Infante St 3",
+        "speed": 40,
     },
     {
         "A": "Proper - 4",
@@ -721,6 +758,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Baluarte - Oton Blvd",
+        "speed": 40,
     },
     {
         "A": "Proper - 5",
@@ -729,6 +767,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Rizal St 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 5",
@@ -737,6 +776,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Rizal St 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 6",
@@ -745,6 +785,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Rizal St 3",
+        "speed": 40,
     },
     {
         "A": "Proper - 6",
@@ -753,6 +794,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Ledesma St",
+        "speed": 40,
     },
     {
         "A": "Proper - 1",
@@ -761,6 +803,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Gen Luna St 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 7",
@@ -769,6 +812,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Gen Luna St 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 8",
@@ -777,6 +821,7 @@ roads = [
         "lanes": 12,
         "oneway": False,
         "name": "Gen Luna St 3",
+        "speed": 40,
     },
     {
         "A": "Proper - 8",
@@ -785,6 +830,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Ruperto Montinola St 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 10",
@@ -793,6 +839,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Ruperto Montinola St 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 2",
@@ -801,6 +848,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Delgado St",
+        "speed": 40,
     },
     {
         "A": "Proper - 12",
@@ -809,6 +857,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Arroyo St",
+        "speed": 40,
     },
     {
         "A": "Proper - 11",
@@ -817,6 +866,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "JM Basa St 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 13",
@@ -825,6 +875,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "JM Basa St 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 14",
@@ -833,6 +884,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "General Hughes St 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 15",
@@ -841,6 +893,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Duran St",
+        "speed": 40,
     },
     {
         "A": "Proper - 15",
@@ -849,6 +902,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "General Hughes St 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 13",
@@ -857,6 +911,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Dela Rama St 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 17",
@@ -865,6 +920,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Dela Rama St 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 17",
@@ -873,6 +929,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Blumentritt 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 17",
@@ -881,6 +938,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Blumentritt 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 9",
@@ -889,6 +947,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Muelle Loney St 1",
+        "speed": 40,
     },
     {
         "A": "Proper - 12",
@@ -897,6 +956,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Muelle Loney St 2",
+        "speed": 40,
     },
     {
         "A": "Proper - 18",
@@ -905,6 +965,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Muelle Loney St 3",
+        "speed": 40,
     },
     {
         "A": "Proper - 19",
@@ -913,6 +974,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Muelle Loney St 4",
+        "speed": 40,
     },
     {
         "A": "Proper - 21",
@@ -921,6 +983,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Fort San Pedro Dr",
+        "speed": 40,
     },
     {
         "A": "Proper - 13",
@@ -929,6 +992,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "JM Basa St (Rev)",
+        "speed": 40,
     },
     {
         "A": "Proper - 23",
@@ -937,6 +1001,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Ruperto Montinola 2 (Rev)",
+        "speed": 40,
     },
     {
         "A": "Proper - 24",
@@ -945,6 +1010,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Ruperto Montinola 1 (Rev)",
+        "speed": 40,
     },
     {
         "A": "Proper - 7",
@@ -953,6 +1019,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Bonifacio Drive",
+        "speed": 40,
     },
     {
         "A": "Proper - 9",
@@ -961,6 +1028,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Quirino - Lopez Bridge",
+        "speed": 40,
     },
     # MANDURRIAO
     {
@@ -970,6 +1038,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Mandurriao - Sn Miguel Rd",
+        "speed": 60,
     },
     {
         "A": "mandurriao - 4",
@@ -978,6 +1047,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Pakiad Rd",
+        "speed": 40,
     },
     {
         "A": "mandurriao - 1",
@@ -986,6 +1056,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Old Iloilo - Capiz Rd",
+        "speed": 60,
     },
     {
         "A": "mandurriao - 1",
@@ -994,6 +1065,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Mandurriao - Jaro Rd",
+        "speed": 40,
     },
     {
         "A": "mandurriao - 2",
@@ -1002,6 +1074,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Mandurriao - Jaro Rd - Mandurriao - Sn Miguel Rd",
+        "speed": 40,
     },
     {
         "A": "mandurriao - 3",
@@ -1010,6 +1083,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "Mandurriao - Sn Miguel Rd - R Mapa St",
+        "speed": 40,
     },
     {
         "A": "mandurriao - 4",
@@ -1018,6 +1092,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "R Mapa St - Mandurriao - Jaro Rd",
+        "speed": 40,
     },
     {
         "A": "mandurriao - 9",
@@ -1026,6 +1101,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Mandurriao-Sn Miguel Rd - Iloilo Circumferential Rd 1",
+        "speed": 60,
     },
     {
         "A": "mandurriao - 10",
@@ -1034,6 +1110,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (1)",
+        "speed": 70,
     },
     {
         "A": "mandurriao - 11",
@@ -1042,6 +1119,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (2)",
+        "speed": 70,
     },
     {
         "A": "mandurriao - 4",
@@ -1050,6 +1128,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "R Mapa St",
+        "speed": 40,
     },
     {
         "A": "mandurriao - 6",
@@ -1058,6 +1137,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "R Mapa St - Extension",
+        "speed": 40,
     },
     # JARO
     {
@@ -1067,6 +1147,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Monfort Blvd - Leganes",
+        "speed": 70,
     },
     {
         "A": "jaro - 19",
@@ -1075,6 +1156,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Lapaz - Monfort Blvd",
+        "speed": 70,
     },
     {
         "A": "jaro - 15",
@@ -1083,6 +1165,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Iloilo Circumferential - Iloilo Radial By-Pass Rd 4",
+        "speed": 70,
     },
     {
         "A": "jaro - 15",
@@ -1091,6 +1174,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Iloilo Radial By-Pass Rd 4 - Buhang Flyover",
+        "speed": 70,
     },
     {
         "A": "jaro - 13",
@@ -1099,6 +1183,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Buhang Flyover - Iloilo-Capiz Rd",
+        "speed": 40,
     },
     {
         "A": "jaro - 14",
@@ -1107,6 +1192,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Iloilo-Capiz Rd - Buhang Flyover",
+        "speed": 40,
     },
     {
         "A": "jaro - 12",
@@ -1115,6 +1201,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Buhang Flyover - Balabago Rd",
+        "speed": 70,
     },
     {
         "A": "jaro - 10",
@@ -1123,6 +1210,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Iloilo-Capiz Rd - Iloilo Circumferential Rd 1 - Monfort Blvd",
+        "speed": 70,
     },
     {
         "A": "jaro - 17",
@@ -1131,6 +1219,7 @@ roads = [
         "lanes": 4,
         "oneway": False,
         "name": "Old Iloilo-Capiz Rd - Old Lopez Jaena St",
+        "speed": 60,
     },
     {
         "A": "jaro - 17",
@@ -1139,6 +1228,7 @@ roads = [
         "lanes": 4,
         "oneway": False,
         "name": "Old Iloilo-Capiz Rd - Old Lopez Jaena St",
+        "speed": 60,
     },
     {
         "A": "jaro - 16",
@@ -1147,6 +1237,7 @@ roads = [
         "lanes": 4,
         "oneway": False,
         "name": "Old Iloilo-Capiz Rd - Pavia",
+        "speed": 70,
     },
     {
         "A": "jaro - 14",
@@ -1155,6 +1246,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Iloilo-Capiz Rd - Iloilo Circumferential Rd 1",
+        "speed": 60,
     },
     {
         "A": "jaro - 15",
@@ -1163,6 +1255,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Iloilo Radial By-Pass Rd 4",
+        "speed": 70,
     },
     {
         "A": "jaro - 14",
@@ -1171,6 +1264,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Iloilo Capiz Rd - Balabago Rd",
+        "speed": 40,
     },
     {
         "A": "jaro - 12",
@@ -1179,6 +1273,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Buhang Flyover",
+        "speed": 40,
     },
     {
         "A": "jaro - 9",
@@ -1187,6 +1282,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Balabago Rd",
+        "speed": 40,
     },
     {
         "A": "jaro - 3",
@@ -1195,6 +1291,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Jereos St",
+        "speed": 40,
     },
     {
         "A": "jaro - 2",
@@ -1203,6 +1300,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Commission Civil St",
+        "speed": 40,
     },
     {
         "A": "jaro - 1",
@@ -1211,6 +1309,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "E Lopez St",
+        "speed": 40,
     },
     {
         "A": "jaro - 6",
@@ -1219,6 +1318,7 @@ roads = [
         "lanes": 1,
         "oneway": True,
         "name": "Plaza Rizal St - Balabago Rd",
+        "speed": 40,
     },
     {
         "A": "jaro - 9",
@@ -1227,6 +1327,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Iloilo-Capiz Rd - Lopez Jaena St",
+        "speed": 40,
     },
     {
         "A": "jaro - 8",
@@ -1235,6 +1336,7 @@ roads = [
         "lanes": 3,
         "oneway": True,
         "name": "Lopez Jaena St - Plaza Rizal St",
+        "speed": 40,
     },
     {
         "A": "jaro - 8",
@@ -1243,6 +1345,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Lopez Jaena St - Old Lopez Jaena St",
+        "speed": 40,
     },
     {
         "A": "jaro - 18",
@@ -1251,6 +1354,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Old Lopez Jaena St - Old Iloilo-Capiz Rd",
+        "speed": 40,
     },
     {
         "A": "jaro - 18",
@@ -1259,6 +1363,7 @@ roads = [
         "lanes": 2,
         "oneway": True,
         "name": "Old Lopez Jaena St - Old Iloilo-Capiz Rd",
+        "speed": 40,
     },
     {
         "A": "jaro - 7",
@@ -1267,6 +1372,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "El 98 St - Plaza Rizal St - E Lopez St",
+        "speed": 40,
     },
     {
         "A": "jaro - 4",
@@ -1275,6 +1381,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "E Lopez St - Plaza Rizal St - Commission Civil St",
+        "speed": 40,
     },
     {
         "A": "jaro - 5",
@@ -1283,6 +1390,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "Commission Civil St - Plaza Rizal St - Iloilo-Capiz Rd",
+        "speed": 40,
     },
     {
         "A": "jaro - 6",
@@ -1291,6 +1399,7 @@ roads = [
         "lanes": 5,
         "oneway": True,
         "name": "Iloilo-Capiz Rd - Plaza Rizal St - El 98 St",
+        "speed": 40,
     },
     {
         "A": "jaro - 7",
@@ -1299,6 +1408,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "El 98 St",
+        "speed": 40,
     },
     # LAPAZ
     {
@@ -1308,6 +1418,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Luna St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 3",
@@ -1316,6 +1427,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Luna St - Huervana St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 1",
@@ -1324,6 +1436,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Luna St - Esplanade 5",
+        "speed": 40,
     },
     {
         "A": "lapaz - 2",
@@ -1332,6 +1445,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "Rizal St - Luna St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 1",
@@ -1340,6 +1454,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "Huervana St - Rizal St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 2",
@@ -1348,6 +1463,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Huervana St - Burgos St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 4",
@@ -1356,6 +1472,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "Huervana St - Jereos St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 5",
@@ -1364,6 +1481,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "Jereos St - Huervana Ext",
+        "speed": 40,
     },
     {
         "A": "lapaz - 6",
@@ -1372,6 +1490,7 @@ roads = [
         "lanes": 3,
         "oneway": True,
         "name": "Huervana Ext",
+        "speed": 40,
     },
     {
         "A": "lapaz - 7",
@@ -1380,6 +1499,7 @@ roads = [
         "lanes": 4,
         "oneway": True,
         "name": "Burgos St - Huervana St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 5",
@@ -1388,6 +1508,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Lopez Jaena St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 8",
@@ -1396,6 +1517,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Baldoza St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 9",
@@ -1404,6 +1526,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Coastal Rd",
+        "speed": 70,
     },
     {
         "A": "lapaz - 9",
@@ -1412,6 +1535,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Monfort Blvd",
+        "speed": 70,
     },
     {
         "A": "lapaz - 7",
@@ -1420,6 +1544,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Burgos St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 6",
@@ -1428,6 +1553,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Jereos St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 4",
@@ -1436,6 +1562,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Divinagracia St",
+        "speed": 40,
     },
     {
         "A": "lapuz - 1",
@@ -1444,6 +1571,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Railroad St",
+        "speed": 40,
     },
     {
         "A": "lapaz - 2",
@@ -1452,6 +1580,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Rizal St - Huervana St",
+        "speed": 40,
     },
     {
         "A": "lapuz - 2",
@@ -1460,6 +1589,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Rizal St - Ferry Terminal Access Rd",
+        "speed": 40,
     },
     {
         "A": "lapuz - 4",
@@ -1468,6 +1598,7 @@ roads = [
         "lanes": 3,
         "oneway": False,
         "name": "New Iloilo Ferry Terminal Access Rd",
+        "speed": 40,
     },
     {
         "A": "lapuz - 4",
@@ -1476,6 +1607,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Rizal St - Iloilo Airport Direct Rd",
+        "speed": 40,
     },
     {
         "A": "lapuz - 6",
@@ -1484,6 +1616,7 @@ roads = [
         "lanes": 2,
         "oneway": False,
         "name": "Lapuz Mansaya Loboc Rd",
+        "speed": 40,
     },
     {
         "A": "lapuz - 6",
@@ -1492,6 +1625,7 @@ roads = [
         "lanes": 1,
         "oneway": False,
         "name": "Iloilo Airport Direct Rd",
+        "speed": 40,
     },
 ]
 

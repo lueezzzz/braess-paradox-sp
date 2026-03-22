@@ -1,29 +1,29 @@
 # Have to change every file name
-import arevalo
+import final_network
 import sys
 
 def convert_to_tntp():
     # Gather all unique nodes
     nodes = set()
-    for item in arevalo.intersections: nodes.add(item['id'])
-    for r in arevalo.roads:
+    for item in final_network.intersections: nodes.add(item['id'])
+    for r in final_network.roads:
         nodes.add(r['A'])
         nodes.add(r['B'])
     
     node_map = {name: i + 1 for i, name in enumerate(sorted(list(nodes)))}
     
     network_data = []
-    for r in arevalo.roads:
+    for r in final_network.roads:
         # Strict logic implementation
         link = {
             'init_node': node_map[r['A']],
             'term_node': node_map[r['B']],
             'capacity': float(r['lanes'] * 1800), 
             'length': round(r['distance'] / 1000.0, 3),
-            'free_flow_time': 0.0,
+            'free_flow_time': round(r['distance'] / r['speed'], 3),
             'b': 0.15,
             'power': 4,
-            'speed': 0,
+            'speed': r['speed'],
             'toll': 0,
             'link_type': 1
         }
@@ -40,8 +40,8 @@ def convert_to_tntp():
         for d in ids:
             demand_data.append({'init_node': o, 'term_node': d, 'demand': 0.0})
 
-    with open('arevalo_tntp.py', 'w') as f:
-        f.write("# Auto-generated TNTP-style data from arevalo.py\n\n")
+    with open('final_network_tntp.py', 'w') as f:
+        f.write("# Auto-generated TNTP-style data from final_network.py\n\n")
         f.write("# Node Mapping Reference:\n")
         for name, idx in node_map.items(): f.write(f"# {idx}: {name}\n")
         f.write("\nnetwork_data = [\n")
