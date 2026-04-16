@@ -1,0 +1,214 @@
+From Node,To Node,Road Name,Baseline Flow,Capacity,V/C Ratio
+villa - 1,villa - 6,Osmena St,0.0,2800,0.0
+villa - 1,villa - 4,Yulo Dr,0.0,2800,0.0
+villa - 1,villa - 2,Jocson St,0.0,2800,0.0
+villa - 2,villa - 1,Jocson St (Rev),0.0,2800,0.0
+villa - 2,villa - 3,Circumferential Rd 1,629.7,2800,0.225
+villa - 2,mandurriao - 8,Iloilo Circumferential Rd 1,634.2,2800,0.227
+villa - 3,villa - 4,Quezon St,0.0,2800,0.0
+villa - 3,villa - 2,Circumferential Rd 1 (Rev),629.7,2800,0.225
+villa - 3,Molo - 3,Molo - Arevalo Connect (Rev),2162.3,2800,0.772
+villa - 4,villa - 1,Yulo Dr (Rev),0.0,2800,0.0
+villa - 4,villa - 3,Quezon St (Rev),0.0,2800,0.0
+villa - 5,Molo - 6,Molo Blvd (Rev),0.0,2800,0.0
+villa - 6,villa - 1,Osmena St (Rev),0.0,2800,0.0
+villa - 6,villa - 7,Pakiad Rd (Rev),0.0,1400,0.0
+villa - 7,villa - 6,Pakiad Rd,0.0,1400,0.0
+Molo - 3,villa - 3,Molo - Arevalo Connect,2162.3,2800,0.772
+Molo - 3,Molo - 4,Locsin St,0.0,2800,0.0
+Molo - 3,mandurriao - 6,New Carpenter Bridge,564.66,1400,0.403
+Molo - 4,Molo - 3,Locsin St (Rev),0.0,2800,0.0
+Molo - 4,Molo - 5,Locsin St,0.0,2800,0.0
+Molo - 4,Molo - 9,M.H Del Pilar,0.0,2800,0.0
+Molo - 5,Molo - 4,Locsin St (Rev),0.0,2800,0.0
+Molo - 5,Molo - 6,Locsin St,0.0,2800,0.0
+Molo - 5,Proper - 2,Timawa St,0.0,2800,0.0
+Molo - 6,Molo - 5,Locsin St (Rev),0.0,2800,0.0
+Molo - 6,villa - 5,Molo Blvd,0.0,2800,0.0
+Molo - 6,Proper - 4,Molo Blvd 2,0.0,2800,0.0
+Molo - 7,Molo - 8,Rotunda,0.0,2800,0.0
+Molo - 8,Molo - 3,San Marcos St,0.0,5600,0.0
+Molo - 8,Molo - 9,M.H Del Pilar,0.0,1400,0.0
+Molo - 9,Molo - 4,M.H Del Pilar (Rev),0.0,2800,0.0
+Molo - 9,Molo - 10,M.H Del Pilar,0.0,5600,0.0
+Molo - 10,Proper - 1,Molo - Proper Connect,0.0,2800,0.0
+Molo - 10,Molo - 7,M.H Del Pilar,0.0,1400,0.0
+Proper - 1,Molo - 7,Gen Luna - Molo Connect,0.0,5600,0.0
+Proper - 1,Proper - 2,Infante St 1,728.2,2800,0.26
+Proper - 1,Proper - 7,Gen Luna St 1,1132.21,2800,0.404
+Proper - 1,mandurriao - 1,Old Iloilo - Capiz Rd (Rev),2395.42,2800,0.856
+Proper - 2,Molo - 5,Timawa St (Rev),0.0,2800,0.0
+Proper - 2,Proper - 1,Infante St 1 (Rev),1082.02,2800,0.386
+Proper - 2,Proper - 3,Infante St 2,594.97,2800,0.212
+Proper - 2,Proper - 10,Delgado St,133.23,2800,0.048
+Proper - 3,Proper - 2,Infante St 2 (Rev),1082.02,2800,0.386
+Proper - 3,Proper - 4,Infante St 3,2468.17,2800,0.881
+Proper - 4,Molo - 6,Molo Blvd 2 (Rev),0.0,2800,0.0
+Proper - 4,Proper - 5,Baluarte - Oton Blvd,2468.17,2800,0.881
+Proper - 5,Proper - 3,Rizal St 1,2955.22,2800,1.055
+Proper - 5,Proper - 6,Rizal St 2,2468.17,2800,0.881
+Proper - 6,Proper - 5,Rizal St 2 (Rev),2955.22,2800,1.055
+Proper - 6,Proper - 14,Rizal St 3,0.0,2800,0.0
+Proper - 6,Proper - 11,Ledesma St,0.0,2800,0.0
+Proper - 7,Proper - 1,Gen Luna St 1 (Rev),718.86,2800,0.257
+Proper - 7,Proper - 8,Gen Luna St 2,1252.21,2800,0.447
+Proper - 7,lapaz - 10,Bonifacio Drive,179.52,2800,0.064
+Proper - 8,Proper - 7,Gen Luna St 2 (Rev),898.38,2800,0.321
+Proper - 8,Proper - 9,Gen Luna St 3,1314.44,16800,0.078
+Proper - 8,Proper - 10,Ruperto Montinola St 1,76.45,2800,0.027
+Proper - 9,Proper - 8,Gen Luna St 3 (Rev),962.26,16800,0.057
+Proper - 9,Proper - 12,Muelle Loney St 1,1923.35,2800,0.687
+Proper - 9,lapuz - 2,Quirino - Lopez Bridge,3625.2,2800,1.295
+Proper - 10,Proper - 8,Ruperto Montinola St 1 (Rev),74.8,2800,0.027
+Proper - 10,Proper - 11,Ruperto Montinola St 2,209.68,2800,0.075
+Proper - 10,Proper - 2,Delgado St (Rev),0.0,2800,0.0
+Proper - 11,Proper - 6,Ledesma St (Rev),0.0,2800,0.0
+Proper - 11,Proper - 10,Ruperto Montinola St 2 (Rev),74.8,2800,0.027
+Proper - 11,Proper - 12,Arroyo St (Rev),1783.15,1400,1.274
+Proper - 11,Proper - 13,JM Basa St 1,1588.7,2800,0.567
+Proper - 12,Proper - 11,Arroyo St,2152.5,1400,1.538
+Proper - 12,Proper - 9,Muelle Loney St 1 (Rev),1506.7,2800,0.538
+Proper - 12,Proper - 18,Muelle Loney St 2,3706.5,2800,1.324
+Proper - 13,Proper - 11,JM Basa St 1 (Rev),1636.0,2800,0.584
+Proper - 13,Proper - 14,JM Basa St 2,0.0,2800,0.0
+Proper - 13,Proper - 17,Dela Rama St 1,1588.7,1400,1.135
+Proper - 14,Proper - 6,Rizal St 3 (Rev),0.0,2800,0.0
+Proper - 14,Proper - 13,JM Basa St 2 (Rev),0.0,2800,0.0
+Proper - 14,Proper - 15,General Hughes St 1,0.0,2800,0.0
+Proper - 15,Proper - 14,General Hughes St 1 (Rev),0.0,2800,0.0
+Proper - 15,Proper - 16,Duran St,0.0,1400,0.0
+Proper - 15,Proper - 22,General Hughes St 2,0.0,2800,0.0
+Proper - 16,Proper - 15,Duran St (Rev),0.0,1400,0.0
+Proper - 17,Proper - 13,Dela Rama St 1 (Rev),1636.0,1400,1.169
+Proper - 17,Proper - 20,Dela Rama St 2,0.0,1400,0.0
+Proper - 17,Proper - 18,Blumentritt 1,1588.7,1400,1.135
+Proper - 17,Proper - 19,Blumentritt 2,0.0,1400,0.0
+Proper - 18,Proper - 17,Blumentritt 1 (Rev),1636.0,1400,1.169
+Proper - 18,Proper - 12,Muelle Loney St 2 (Rev),3659.2,2800,1.307
+Proper - 18,Proper - 19,Muelle Loney St 3,0.0,2800,0.0
+Proper - 19,Proper - 17,Blumentritt 2 (Rev),0.0,1400,0.0
+Proper - 19,Proper - 18,Muelle Loney St 3 (Rev),0.0,2800,0.0
+Proper - 19,Proper - 21,Muelle Loney St 4,0.0,2800,0.0
+Proper - 20,Proper - 17,Dela Rama St 2 (Rev),0.0,1400,0.0
+Proper - 21,Proper - 19,Muelle Loney St 4 (Rev),0.0,2800,0.0
+Proper - 21,Proper - 22,Fort San Pedro Dr,0.0,2800,0.0
+Proper - 22,Proper - 15,General Hughes St 2 (Rev),0.0,2800,0.0
+Proper - 22,Proper - 21,Fort San Pedro Dr (Rev),0.0,2800,0.0
+mandurriao - 1,Proper - 1,Old Iloilo - Capiz Rd,2454.95,2800,0.877
+mandurriao - 1,mandurriao - 2,Mandurriao - Jaro Rd,1029.7,2800,0.368
+mandurriao - 1,jaro - 17,Old Iloilo-Capiz Rd - Old Lopez Jaena St (Rev),0.0,5600,0.0
+mandurriao - 1,jaro - 7,El 98 St (Rev),868.67,2800,0.31
+mandurriao - 2,mandurriao - 1,Mandurriao - Jaro Rd (Rev),1029.7,2800,0.368
+mandurriao - 2,mandurriao - 3,Mandurriao - Jaro Rd - Mandurriao - Sn Miguel Rd,664.6,2800,0.237
+mandurriao - 3,mandurriao - 12,Mandurriao - Sn Miguel Rd,1659.4,2800,0.593
+mandurriao - 3,mandurriao - 4,Mandurriao - Sn Miguel Rd - R Mapa St,664.6,5600,0.119
+mandurriao - 4,mandurriao - 5,Pakiad Rd,0.0,2800,0.0
+mandurriao - 4,mandurriao - 2,R Mapa St - Mandurriao - Jaro Rd,664.6,2800,0.237
+mandurriao - 4,mandurriao - 6,R Mapa St,475.5,2800,0.17
+mandurriao - 5,mandurriao - 4,Pakiad Rd (Rev),0.0,2800,0.0
+mandurriao - 6,Molo - 3,New Carpenter Bridge (Rev),564.66,1400,0.403
+mandurriao - 6,mandurriao - 4,R Mapa St (Rev),475.5,2800,0.17
+mandurriao - 6,mandurriao - 7,R Mapa St - Extension,0.0,1400,0.0
+mandurriao - 7,mandurriao - 6,R Mapa St - Extension (Rev),0.0,1400,0.0
+mandurriao - 8,villa - 2,Iloilo Circumferential Rd 1 (Rev),634.2,2800,0.227
+mandurriao - 9,mandurriao - 12,Mandurriao-Sn Miguel Rd - Iloilo Circumferential Rd 1,0.0,2800,0.0
+mandurriao - 10,mandurriao - 12,Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (1),0.0,2800,0.0
+mandurriao - 11,mandurriao - 12,Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (2),0.0,2800,0.0
+mandurriao - 12,mandurriao - 3,Mandurriao - Sn Miguel Rd (Rev),1659.4,2800,0.593
+mandurriao - 12,mandurriao - 9,Mandurriao-Sn Miguel Rd - Iloilo Circumferential Rd 1 (Rev),0.0,2800,0.0
+mandurriao - 12,mandurriao - 10,Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (1) (Rev),0.0,2800,0.0
+mandurriao - 12,mandurriao - 11,Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (2) (Rev),0.0,2800,0.0
+jaro - 1,jaro - 4,E Lopez St,179.52,2800,0.064
+jaro - 1,lapaz - 3,Luna St (Rev),120.0,2800,0.043
+jaro - 2,jaro - 5,Commission Civil St,541.7,1400,0.387
+jaro - 2,lapaz - 7,Burgos St (Rev),607.6,1400,0.434
+jaro - 3,jaro - 25,Jereos St,0.0,1400,0.0
+jaro - 3,lapaz - 6,Jereos St (Rev),0.0,1400,0.0
+jaro - 4,jaro - 1,E Lopez St (Rev),120.0,2800,0.043
+jaro - 4,jaro - 5,E Lopez St - Plaza Rizal St - Commission Civil St,1137.14,5600,0.203
+jaro - 5,jaro - 2,Commission Civil St (Rev),607.6,1400,0.434
+jaro - 5,jaro - 6,Commission Civil St - Plaza Rizal St - Iloilo-Capiz Rd,1071.24,5600,0.191
+jaro - 6,jaro - 9,Plaza Rizal St - Balabago Rd,1186.0,1400,0.847
+jaro - 6,jaro - 7,Iloilo-Capiz Rd - Plaza Rizal St - El 98 St,791.3,7000,0.113
+jaro - 7,jaro - 4,El 98 St - Plaza Rizal St - E Lopez St,1077.62,5600,0.192
+jaro - 7,mandurriao - 1,El 98 St,928.2,2800,0.331
+jaro - 8,jaro - 6,Lopez Jaena St - Plaza Rizal St,791.3,4200,0.188
+jaro - 8,jaro - 18,Lopez Jaena St - Old Lopez Jaena St,0.0,1400,0.0
+jaro - 9,jaro - 14,Iloilo Capiz Rd - Balabago Rd (Rev),1586.06,2800,0.566
+jaro - 9,jaro - 10,Balabago Rd,1125.84,2800,0.402
+jaro - 9,jaro - 8,Iloilo-Capiz Rd - Lopez Jaena St,1251.9,2800,0.447
+jaro - 10,jaro - 12,Buhang Flyover - Balabago Rd (Rev),0.0,2800,0.0
+jaro - 10,jaro - 11,Iloilo-Capiz Rd - Iloilo Circumferential Rd 1 - Monfort Blvd,97.0,1400,0.069
+jaro - 10,jaro - 9,Balabago Rd (Rev),1190.08,2800,0.425
+jaro - 11,jaro - 20,Monfort Blvd - Leganes,1152.8,2800,0.412
+jaro - 11,jaro - 19,Lapaz - Monfort Blvd (Rev),1356.3,2800,0.484
+jaro - 11,jaro - 10,Iloilo-Capiz Rd - Iloilo Circumferential Rd 1 - Monfort Blvd (Rev),162.9,1400,0.116
+jaro - 12,jaro - 14,Iloilo-Capiz Rd - Buhang Flyover (Rev),1587.71,1400,1.134
+jaro - 12,jaro - 10,Buhang Flyover - Balabago Rd,0.0,2800,0.0
+jaro - 12,jaro - 13,Buhang Flyover,0.0,1400,0.0
+jaro - 13,jaro - 15,Iloilo Radial By-Pass Rd 4 - Buhang Flyover (Rev),0.0,2800,0.0
+jaro - 13,jaro - 14,Buhang Flyover - Iloilo-Capiz Rd,0.0,1400,0.0
+jaro - 13,jaro - 12,Buhang Flyover (Rev),0.0,1400,0.0
+jaro - 14,jaro - 13,Buhang Flyover - Iloilo-Capiz Rd (Rev),0.0,1400,0.0
+jaro - 14,jaro - 12,Iloilo-Capiz Rd - Buhang Flyover,1586.06,1400,1.133
+jaro - 14,jaro - 21,Iloilo-Capiz Rd - Iloilo Circumferential Rd 1,0.0,2800,0.0
+jaro - 14,jaro - 9,Iloilo Capiz Rd - Balabago Rd,1587.71,2800,0.567
+jaro - 15,jaro - 22,Iloilo Circumferential - Iloilo Radial By-Pass Rd 4,0.0,2800,0.0
+jaro - 15,jaro - 13,Iloilo Radial By-Pass Rd 4 - Buhang Flyover,0.0,2800,0.0
+jaro - 15,jaro - 23,Iloilo Radial By-Pass Rd 4,0.0,2800,0.0
+jaro - 16,jaro - 17,Old Iloilo-Capiz Rd - Old Lopez Jaena St (Rev),0.0,5600,0.0
+jaro - 16,jaro - 24,Old Iloilo-Capiz Rd - Pavia,0.0,5600,0.0
+jaro - 17,mandurriao - 1,Old Iloilo-Capiz Rd - Old Lopez Jaena St,0.0,5600,0.0
+jaro - 17,jaro - 16,Old Iloilo-Capiz Rd - Old Lopez Jaena St,0.0,5600,0.0
+jaro - 17,jaro - 18,Old Lopez Jaena St - Old Iloilo-Capiz Rd (Rev),0.0,2800,0.0
+jaro - 18,jaro - 8,Lopez Jaena St - Old Lopez Jaena St (Rev),0.0,1400,0.0
+jaro - 18,jaro - 17,Old Lopez Jaena St - Old Iloilo-Capiz Rd,0.0,2800,0.0
+jaro - 18,jaro - 16,Old Lopez Jaena St - Old Iloilo-Capiz Rd,0.0,2800,0.0
+jaro - 19,jaro - 11,Lapaz - Monfort Blvd,1422.2,2800,0.508
+jaro - 19,lapaz - 9,Monfort Blvd (Rev),1529.8,2800,0.546
+jaro - 20,jaro - 11,Monfort Blvd - Leganes (Rev),1152.8,2800,0.412
+jaro - 21,jaro - 14,Iloilo-Capiz Rd - Iloilo Circumferential Rd 1 (Rev),0.0,2800,0.0
+jaro - 22,jaro - 15,Iloilo Circumferential - Iloilo Radial By-Pass Rd 4 (Rev),0.0,2800,0.0
+jaro - 23,jaro - 15,Iloilo Radial By-Pass Rd 4 (Rev),0.0,2800,0.0
+jaro - 24,jaro - 16,Old Iloilo-Capiz Rd - Pavia (Rev),0.0,5600,0.0
+jaro - 25,jaro - 3,Jereos St (Rev),0.0,1400,0.0
+lapaz - 1,lapaz - 3,Luna St - Huervana St (Rev),179.52,2800,0.064
+lapaz - 1,lapaz - 10,Luna St - Esplanade 5,120.0,2800,0.043
+lapaz - 1,lapaz - 2,Huervana St - Rizal St,0.0,5600,0.0
+lapaz - 2,lapaz - 3,Rizal St - Luna St,0.0,5600,0.0
+lapaz - 2,lapaz - 4,Huervana St - Burgos St,0.0,2800,0.0
+lapaz - 2,lapuz - 2,Rizal St - Huervana St,0.0,2800,0.0
+lapaz - 3,jaro - 1,Luna St,179.52,2800,0.064
+lapaz - 3,lapaz - 1,Luna St - Huervana St,120.0,2800,0.043
+lapaz - 4,lapaz - 2,Huervana St - Burgos St (Rev),0.0,2800,0.0
+lapaz - 4,lapaz - 5,Huervana St - Jereos St,607.6,5600,0.108
+lapaz - 4,lapuz - 1,Divinagracia St,0.0,1400,0.0
+lapaz - 5,lapaz - 6,Jereos St - Huervana Ext,541.7,5600,0.097
+lapaz - 5,lapaz - 8,Lopez Jaena St,607.6,2800,0.217
+lapaz - 6,lapaz - 7,Huervana Ext,541.7,4200,0.129
+lapaz - 6,jaro - 3,Jereos St,0.0,1400,0.0
+lapaz - 7,lapaz - 4,Burgos St - Huervana St,607.6,5600,0.108
+lapaz - 7,jaro - 2,Burgos St,541.7,1400,0.387
+lapaz - 8,lapaz - 5,Lopez Jaena St (Rev),541.7,2800,0.193
+lapaz - 8,lapaz - 9,Baldoza St,607.6,2800,0.217
+lapaz - 9,lapaz - 8,Baldoza St (Rev),541.7,2800,0.193
+lapaz - 9,lapuz - 7,Coastal Rd,130.9,2800,0.047
+lapaz - 9,jaro - 19,Monfort Blvd,1595.7,2800,0.57
+lapaz - 10,Proper - 7,Bonifacio Drive (Rev),120.0,2800,0.043
+lapaz - 10,lapaz - 1,Luna St - Esplanade 5 (Rev),179.52,2800,0.064
+lapuz - 1,lapaz - 4,Divinagracia St (Rev),0.0,1400,0.0
+lapuz - 1,lapuz - 3,Railroad St,0.0,1400,0.0
+lapuz - 2,Proper - 9,Quirino - Lopez Bridge (Rev),3625.2,2800,1.295
+lapuz - 2,lapaz - 2,Rizal St - Huervana St (Rev),0.0,2800,0.0
+lapuz - 2,lapuz - 4,Rizal St - Ferry Terminal Access Rd,3625.2,2800,1.295
+lapuz - 3,lapuz - 1,Railroad St (Rev),0.0,1400,0.0
+lapuz - 4,lapuz - 2,Rizal St - Ferry Terminal Access Rd (Rev),3625.2,2800,1.295
+lapuz - 4,lapuz - 5,New Iloilo Ferry Terminal Access Rd,0.0,4200,0.0
+lapuz - 4,lapuz - 6,Rizal St - Iloilo Airport Direct Rd,584.1,2800,0.209
+lapuz - 5,lapuz - 4,New Iloilo Ferry Terminal Access Rd (Rev),0.0,4200,0.0
+lapuz - 6,lapuz - 4,Rizal St - Iloilo Airport Direct Rd (Rev),584.1,2800,0.209
+lapuz - 6,lapuz - 7,Lapuz Mansaya Loboc Rd,0.0,2800,0.0
+lapuz - 6,lapuz - 8,Iloilo Airport Direct Rd,0.0,1400,0.0
+lapuz - 7,lapaz - 9,Coastal Rd (Rev),130.9,2800,0.047
+lapuz - 7,lapuz - 6,Lapuz Mansaya Loboc Rd (Rev),0.0,2800,0.0
+lapuz - 8,lapuz - 6,Iloilo Airport Direct Rd (Rev),0.0,1400,0.0

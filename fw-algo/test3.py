@@ -1,4 +1,4 @@
-# OD Demand is distributed by splitting the peak hour demand evenly across all node pairs between the origin and destination zones
+# OD Demand is distributed by creating a virtual "Centroid" node for each zone and connecting it to major physical nodes in that zone with high-capacity, low-travel-time links. 
 
 import pandas as pd
 import networkx as nx
@@ -61,32 +61,83 @@ for _, row in zones_df.iterrows():
     if zone_id in zone_to_nodes and node_id in G.nodes:
         zone_to_nodes[zone_id].append(node_id)
 
+
+CONNECTOR_TIME = 0.01  # 36 seconds to reach the main road network
+CONNECTOR_CAP = 999999 # Infinite capacity to prevent artificial queuing
+
+# Define strategic gates for each zone 
+strategic_gates = {
+    "1": ["Proper - 6", "Proper - 11", "Proper - 9"],
+    "2": ["Proper - 18", "Proper - 19", "Proper - 21"],
+    "3": ["Proper - 1", "Molo - 3", "Proper - 3"],
+    "4": ["villa - 2", "villa - 3", "villa - 6"],
+    "5": ["mandurriao - 8"],
+    "6": ["mandurriao - 1", "mandurriao - 6", "mandurriao - 7"],
+    "7": ["mandurriao - 2", "mandurriao - 3", "mandurriao - 4"],
+    "8": ["mandurriao - 12", "mandurriao - 9", "mandurriao - 10"],
+    "9": ["lapuz - 4", "lapuz - 5", "lapaz - 9"],
+    "10": ["lapuz - 7", "lapuz - 6", "lapuz - 8"],
+    "11": ["jaro - 19"],
+    "12": ["jaro - 6", "jaro - 7", "jaro - 8"],
+    "13": ["jaro - 9"],
+    "14": ["jaro - 10", "jaro - 11", "jaro - 12"],
+    "15": ["jaro - 21", "jaro - 22", "jaro - 20"]
+}
+
+# Create the virtual nodes for each zone
+for zone_id in range(1, 16):
+    centroid_id = f"Centroid_{zone_id}"
+    G.add_node(centroid_id, name=f"Zone {zone_id} Virtual Center")
+
+
+for zone_id, node_list in strategic_gates.items():
+    centroid_id = f"Centroid - {zone_id}"
+    
+    for physical_node in node_list:
+        # Outbound: From House -> Main Road
+        G.add_edge(centroid_id, physical_node, 
+                    capacity=CONNECTOR_CAP, 
+                    fft=CONNECTOR_TIME, 
+                    alpha=0.0, 
+                    beta=4.0, 
+                    flow=0.0, 
+                    weight=CONNECTOR_TIME, 
+                    name="Centroid-Connector-Out")
+            
+        # Inbound: From Main Road -> House
+        G.add_edge(physical_node, centroid_id, 
+                    capacity=CONNECTOR_CAP, 
+                    fft=CONNECTOR_TIME, 
+                    alpha=0.0,
+                    beta=4.0, 
+                    flow=0.0, 
+                    weight=CONNECTOR_TIME, 
+                    name="Centroid-Connector-In")
+
+print(f"Centroid setup complete: 15 Virtual Nodes and {len(G.edges) - 213} Connectors added.")
+
 # Prepare routing demands with peak factor and spatial disaggregation
 routing_demands = []
 PEAK_FACTOR = 0.10
+
 for index, row in od_df.iterrows():
     orig_zone = str(row['ALL']).strip()
-    # Skip non-numeric rows (like TOTAL) and provincial zones
-    if not orig_zone.isdigit() or int(orig_zone) > 15: continue 
+    if not orig_zone.isdigit() or int(orig_zone) > 15: 
+        continue 
     
-    for dest_zone in [str(i) for i in range(1, 16)]: 
-        # Skip if destination is same as origin or if demand is zero/NA
+    for dest_zone in [str(i) for i in range(1, 16)]:
         raw_volume = row[dest_zone]
-        if orig_zone == dest_zone or pd.isna(raw_volume) or raw_volume <= 0: continue
         
-        # Apply peak factor to the raw volume
-        peak_volume = raw_volume * PEAK_FACTOR
-        orig_nodes, dest_nodes = zone_to_nodes.get(orig_zone, []), zone_to_nodes.get(dest_zone, [])
+        # Skip intra-zonal and empty cells
+        if orig_zone == dest_zone or pd.isna(raw_volume) or raw_volume <= 0: 
+            continue
         
-        # Only proceed if both origin and destination zones have valid nodes in the graph
-        if orig_nodes and dest_nodes:
-            # Distribute the peak volume evenly across all node pairs between the origin and destination zones
-            vol_per_pair = peak_volume / (len(orig_nodes) * len(dest_nodes))
-            
-            for o_node in orig_nodes:
-                for d_node in dest_nodes:
-                    if o_node != d_node: 
-                        routing_demands.append({'origin': o_node, 'destination': d_node, 'volume': vol_per_pair})
+        # ONE demand entry per zone-pair
+        routing_demands.append({
+            'origin': f"Centroid - {orig_zone}", 
+            'destination': f"Centroid - {dest_zone}", 
+            'volume': raw_volume * PEAK_FACTOR
+        })
 
 print(f"Graph built with {len(G.nodes)} nodes and {len(G.edges)} edges.")
 print(f"Processing {len(routing_demands)} active OD routes...")
@@ -190,6 +241,7 @@ baseline_tstt, _ = solve_equilibrium(G, routing_demands)
 print(f"Baseline TSTT: {baseline_tstt:.2f} hours ({baseline_tstt * 60:.1f} minutes)")
 print(f"Time taken: {time.time()-start_time:.1f} seconds")
 
+print("\n--- Exporting Baseline Data ---")
 baseline_data = []
 for u, v, d in G.edges(data=True):
     # Filter out virtual centroid connectors
@@ -208,13 +260,14 @@ for u, v, d in G.edges(data=True):
         })
 
 df_baseline = pd.DataFrame(baseline_data)
-df_baseline.to_csv('Setup 1 Baseline Network Flows.csv', index=False)
-print("Saved baseline flows to 'Setup 1 Baseline Network Flows.csv'")
+df_baseline.to_csv('Setup 3 Baseline Network Flows.csv', index=False)
+print("Saved baseline flows to 'Setup 3 Baseline Network Flows.csv'")
 
-
+# Isolate links that actually have traffic
 candidate_links = [
     (u, v, d['name'], d.get('flow', 0.0)) 
-    for u, v, d in G.edges(data=True)
+    for u, v, d in G.edges(data=True) 
+    if "Centroid-Connector" not in d.get('name', '')
 ]
 
 results = []
@@ -246,6 +299,7 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
     if has_reverse:
         G.add_edge(v, u, **edge_data_rev)
         
+    # Analyze Results
     # Analyze Results
     if dropped_vol > 0:
         results.append({
@@ -282,8 +336,8 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
 df_results = pd.DataFrame(results)
 
 # Save to CSV
-df_results.to_csv('Setup 1 Results.csv', index=False)
-print("\nData successfully saved to 'Setup 1 Results.csv'")
+df_results.to_csv('Setup 3 Results.csv', index=False)
+print("\nData successfully saved to 'Setup 3 Results.csv'")
 
 # Print the top 10 valid active findings to console
 print("\n--- TOP 10 FINDINGS ---")
