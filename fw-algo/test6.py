@@ -260,8 +260,8 @@ for u, v, d in G.edges(data=True):
         })
 
 df_baseline = pd.DataFrame(baseline_data)
-df_baseline.to_csv('Setup 3 Baseline Network Flows.csv', index=False)
-print("Saved baseline flows to 'Setup 3 Baseline Network Flows.csv'")
+df_baseline.to_csv('Setup 6 Baseline Network Flows.csv', index=False)
+print("Saved baseline flows to 'Setup 6 Baseline Network Flows.csv'")
 
 # Isolate links that actually have traffic
 candidate_links = [
@@ -271,42 +271,24 @@ candidate_links = [
 ]
 
 results = []
-tested_pairs = set() 
 
 for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
-    # Create a unique signature for the pair of nodes to avoid redundant testing of the same link in reverse
-    pair_sig = tuple(sorted([u, v]))
-    if pair_sig in tested_pairs:
-        continue
-    tested_pairs.add(pair_sig)
-    
     # Save and remove FORWARD edge
-    edge_data_fwd = G[u][v].copy()
+    edge_data = G[u][v].copy()
     G.remove_edge(u, v)
-    
-    # Check for, save, and remove REVERSE edge
-    has_reverse = False
-    if G.has_edge(v, u):
-        edge_data_rev = G[v][u].copy()
-        G.remove_edge(v, u)
-        has_reverse = True
-        
+
     # Run the altered network
     new_tstt, dropped_vol = solve_equilibrium(G, routing_demands, max_iter=25, accuracy=0.01) 
     
     # Restore both edges immediately
-    G.add_edge(u, v, **edge_data_fwd)
-    if has_reverse:
-        G.add_edge(v, u, **edge_data_rev)
-        
-    # Analyze Results
+    G.add_edge(u, v, **edge_data)
+
     # Analyze Results
     if dropped_vol > 0:
         results.append({
             'Road Name': road_name,
             'From Node': u,
             'To Node': v,
-            'Closure Type': 'Two-Way' if has_reverse else 'One-Way',
             'Baseline Flow': round(base_flow, 2),
             'Status': 'CRITICAL CUT-EDGE',
             'Baseline TSTT (Hours)': round(baseline_tstt, 2),
@@ -326,7 +308,6 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
         'Road Name': road_name,
         'From Node': u,
         'To Node': v,
-        'Closure Type': 'Two-Way' if has_reverse else 'One-Way',
         'Baseline Flow': round(base_flow, 2),
         'Status': 'Active' if base_flow > 1.0 else 'Inactive',
         'Baseline TSTT (Hours)': round(baseline_tstt, 2),
@@ -338,8 +319,8 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
 df_results = pd.DataFrame(results)
 
 # Save to CSV
-df_results.to_csv('Setup 3 Results.csv', index=False)
-print("\nData successfully saved to 'Setup 3 Results.csv'")
+df_results.to_csv('Setup 6 Results.csv', index=False)
+print("\nData successfully saved to 'Setup 6 Results.csv'")
 
 # Print the top 10 valid active findings to console
 print("\n--- TOP 10 FINDINGS ---")

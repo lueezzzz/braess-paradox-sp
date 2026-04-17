@@ -281,7 +281,6 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
         G.add_edge(v, u, **edge_data_rev)
         
     # Analyze Results
-    # Analyze Results
     if dropped_vol > 0:
         results.append({
             'Road Name': road_name,
@@ -290,6 +289,7 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
             'Closure Type': 'Two-Way' if has_reverse else 'One-Way',
             'Baseline Flow': round(base_flow, 2),
             'Status': 'CRITICAL CUT-EDGE',
+            'Baseline TSTT (Hours)': round(baseline_tstt, 2),
             'New TSTT (Hours)': 'DISCONNECTED',
             'Change (Minutes)': f"Dropped {round(dropped_vol)} vol",
             'Braess Link?': 'N/A'
@@ -309,6 +309,7 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
         'Closure Type': 'Two-Way' if has_reverse else 'One-Way',
         'Baseline Flow': round(base_flow, 2),
         'Status': 'Active' if base_flow > 1.0 else 'Inactive',
+        'Baseline TSTT (Hours)': round(baseline_tstt, 2),
         'New TSTT (Hours)': round(new_tstt, 2),
         'Change (Minutes)': round(time_difference_mins, 2),
         'Braess Link?': 'Yes' if is_paradox else 'No'

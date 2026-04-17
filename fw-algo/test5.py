@@ -1,4 +1,4 @@
-# OD Demand is distributed by creating a virtual "Centroid" node for each zone and connecting it to major physical nodes in that zone with high-capacity, low-travel-time links. 
+# OD Demand is distributed by creating a virtual "Centroid" node for each zone and connecting it to all physical nodes in that zone with high-capacity, low-travel-time links
 
 import pandas as pd
 import networkx as nx
@@ -65,54 +65,34 @@ for _, row in zones_df.iterrows():
 CONNECTOR_TIME = 0.01  # 36 seconds to reach the main road network
 CONNECTOR_CAP = 999999 # Infinite capacity to prevent artificial queuing
 
-# Define strategic gates for each zone 
-strategic_gates = {
-    "1": ["Proper - 6", "Proper - 11", "Proper - 7"],
-    "2": ["Proper - 18", "Proper - 19", "Proper - 21"],
-    "3": ["Proper - 1", "Molo - 3", "Proper - 2"],
-    "4": ["villa - 2", "villa - 3", "villa - 6"],
-    "5": ["mandurriao - 8"],
-    "6": ["mandurriao - 1", "mandurriao - 7"],
-    "7": ["mandurriao - 2", "mandurriao - 3", "mandurriao - 4"],
-    "8": ["mandurriao - 12", "mandurriao - 9", "mandurriao - 10"],
-    "9": ["lapuz - 4", "lapuz - 5", "lapaz - 9"],
-    "10": ["lapuz - 7", "lapuz - 8"],
-    "11": ["jaro - 19"],
-    "12": ["jaro - 6", "jaro - 7", "jaro - 8"],
-    "13": ["jaro - 9"],
-    "14": ["jaro - 15", "jaro - 11", "jaro - 12"],
-    "15": ["jaro - 21", "jaro - 22", "jaro - 20"]
-}
-
 # Create the virtual nodes for each zone
 for zone_id in range(1, 16):
     centroid_id = f"Centroid_{zone_id}"
     G.add_node(centroid_id, name=f"Zone {zone_id} Virtual Center")
 
 
-for zone_id, node_list in strategic_gates.items():
+for zone_id, node_list in zone_to_nodes.items():
     centroid_id = f"Centroid - {zone_id}"
     
     for physical_node in node_list:
         # Outbound: From House -> Main Road
         G.add_edge(centroid_id, physical_node, 
-                    capacity=CONNECTOR_CAP, 
-                    fft=CONNECTOR_TIME, 
-                    alpha=0.0, 
-                    beta=4.0, 
-                    flow=0.0, 
-                    weight=CONNECTOR_TIME, 
-                    name="Centroid-Connector-Out")
-            
-        # Inbound: From Main Road -> House
+                   capacity=CONNECTOR_CAP, 
+                   fft=CONNECTOR_TIME, 
+                   alpha=0.0,  # Zero alpha means NO congestion delay
+                   beta=4.0, 
+                   flow=0.0, 
+                   weight=CONNECTOR_TIME, 
+                   name="Centroid-Connector-Out")
+        
         G.add_edge(physical_node, centroid_id, 
-                    capacity=CONNECTOR_CAP, 
-                    fft=CONNECTOR_TIME, 
-                    alpha=0.0,
-                    beta=4.0, 
-                    flow=0.0, 
-                    weight=CONNECTOR_TIME, 
-                    name="Centroid-Connector-In")
+                   capacity=CONNECTOR_CAP, 
+                   fft=CONNECTOR_TIME, 
+                   alpha=0.0, 
+                   beta=4.0, 
+                   flow=0.0, 
+                   weight=CONNECTOR_TIME, 
+                   name="Centroid-Connector-In")
 
 print(f"Centroid setup complete: 15 Virtual Nodes and {len(G.edges) - 213} Connectors added.")
 
@@ -260,8 +240,9 @@ for u, v, d in G.edges(data=True):
         })
 
 df_baseline = pd.DataFrame(baseline_data)
-df_baseline.to_csv('Setup 3 Baseline Network Flows.csv', index=False)
-print("Saved baseline flows to 'Setup 3 Baseline Network Flows.csv'")
+df_baseline.to_csv('Setup 5 Baseline Network Flows.csv', index=False)
+print("Saved baseline flows to 'Setup 5 Baseline Network Flows.csv'")
+
 
 # Isolate links that actually have traffic
 candidate_links = [
@@ -271,42 +252,24 @@ candidate_links = [
 ]
 
 results = []
-tested_pairs = set() 
 
-for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
-    # Create a unique signature for the pair of nodes to avoid redundant testing of the same link in reverse
-    pair_sig = tuple(sorted([u, v]))
-    if pair_sig in tested_pairs:
-        continue
-    tested_pairs.add(pair_sig)
-    
-    # Save and remove FORWARD edge
-    edge_data_fwd = G[u][v].copy()
+for i, (u, v, road_name, base_flow) in enumerate(candidate_links):  
+    # Save and remove edge
+    edge_data = G[u][v].copy()
     G.remove_edge(u, v)
-    
-    # Check for, save, and remove REVERSE edge
-    has_reverse = False
-    if G.has_edge(v, u):
-        edge_data_rev = G[v][u].copy()
-        G.remove_edge(v, u)
-        has_reverse = True
         
     # Run the altered network
     new_tstt, dropped_vol = solve_equilibrium(G, routing_demands, max_iter=25, accuracy=0.01) 
     
     # Restore both edges immediately
-    G.add_edge(u, v, **edge_data_fwd)
-    if has_reverse:
-        G.add_edge(v, u, **edge_data_rev)
-        
-    # Analyze Results
+    G.add_edge(u, v, **edge_data)
+
     # Analyze Results
     if dropped_vol > 0:
         results.append({
             'Road Name': road_name,
             'From Node': u,
             'To Node': v,
-            'Closure Type': 'Two-Way' if has_reverse else 'One-Way',
             'Baseline Flow': round(base_flow, 2),
             'Status': 'CRITICAL CUT-EDGE',
             'Baseline TSTT (Hours)': round(baseline_tstt, 2),
@@ -326,7 +289,6 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
         'Road Name': road_name,
         'From Node': u,
         'To Node': v,
-        'Closure Type': 'Two-Way' if has_reverse else 'One-Way',
         'Baseline Flow': round(base_flow, 2),
         'Status': 'Active' if base_flow > 1.0 else 'Inactive',
         'Baseline TSTT (Hours)': round(baseline_tstt, 2),
@@ -338,8 +300,8 @@ for i, (u, v, road_name, base_flow) in enumerate(candidate_links):
 df_results = pd.DataFrame(results)
 
 # Save to CSV
-df_results.to_csv('Setup 3 Results.csv', index=False)
-print("\nData successfully saved to 'Setup 3 Results.csv'")
+df_results.to_csv('Setup 5 Results.csv', index=False)
+print("\nData successfully saved to 'Setup 5 Results.csv'")
 
 # Print the top 10 valid active findings to console
 print("\n--- TOP 10 FINDINGS ---")
