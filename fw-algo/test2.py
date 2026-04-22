@@ -221,7 +221,6 @@ baseline_tstt, _ = solve_equilibrium(G, routing_demands)
 print(f"Baseline TSTT: {baseline_tstt:.2f} hours ({baseline_tstt * 60:.1f} minutes)")
 print(f"Time taken: {time.time()-start_time:.1f} seconds")
 
-print("\n--- Exporting Baseline Data ---")
 baseline_data = []
 for u, v, d in G.edges(data=True):
     # Filter out virtual centroid connectors

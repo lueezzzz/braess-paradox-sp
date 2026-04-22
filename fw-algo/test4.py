@@ -182,7 +182,6 @@ def solve_equilibrium(graph, demands, accuracy=0.0001, max_iter=50):
     
     return TSTT, 0.0
 
-
 print("\n--- Calculating Baseline User Equilibrium ---")
 # Calculate the baseline TSTT for the original network before any modifications, and measure the time taken for this initial equilibrium calculation
 start_time = time.time()

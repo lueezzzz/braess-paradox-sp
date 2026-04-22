@@ -221,7 +221,6 @@ baseline_tstt, _ = solve_equilibrium(G, routing_demands)
 print(f"Baseline TSTT: {baseline_tstt:.2f} hours ({baseline_tstt * 60:.1f} minutes)")
 print(f"Time taken: {time.time()-start_time:.1f} seconds")
 
-print("\n--- Exporting Baseline Data ---")
 baseline_data = []
 for u, v, d in G.edges(data=True):
     # Filter out virtual centroid connectors
@@ -243,8 +242,6 @@ df_baseline = pd.DataFrame(baseline_data)
 df_baseline.to_csv('Setup 5 Baseline Network Flows.csv', index=False)
 print("Saved baseline flows to 'Setup 5 Baseline Network Flows.csv'")
 
-
-# Isolate links that actually have traffic
 candidate_links = [
     (u, v, d['name'], d.get('flow', 0.0)) 
     for u, v, d in G.edges(data=True) 
