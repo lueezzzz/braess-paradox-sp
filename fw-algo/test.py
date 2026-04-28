@@ -21,7 +21,7 @@ for _, row in nodes_df.iterrows():
     G.add_node(str(row['id']).strip(), name=row['name'])
 
 # Add edges with attributes (including capacity based on lane count)
-CAP_PER_LANE = 1400
+CAP_PER_LANE = 1100
 for _, row in edges_df.iterrows():
     u, v = str(row['A']).strip(), str(row['B']).strip()
     if u not in G.nodes or v not in G.nodes: continue
