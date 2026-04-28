@@ -1,121 +1,121 @@
 Road Name,From Node,To Node,Closure Type,Baseline Flow,Status,Baseline TSTT (Hours),New TSTT (Hours),Change (Minutes),Braess Link?
-Osmena St,villa - 1,villa - 6,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Yulo Dr,villa - 1,villa - 4,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Jocson St,villa - 1,villa - 2,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Circumferential Rd 1,villa - 2,villa - 3,Two-Way,629.7,Active,3324.21,3352.26,1682.62,No
-Iloilo Circumferential Rd 1,villa - 2,mandurriao - 8,Two-Way,634.2,CRITICAL CUT-EDGE,3324.21,DISCONNECTED,Dropped 1268 vol,N/A
-Quezon St,villa - 3,villa - 4,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Molo - Arevalo Connect (Rev),villa - 3,Molo - 3,Two-Way,2162.3,CRITICAL CUT-EDGE,3324.21,DISCONNECTED,Dropped 4325 vol,N/A
-Molo Blvd (Rev),villa - 5,Molo - 6,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Pakiad Rd (Rev),villa - 6,villa - 7,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Locsin St,Molo - 3,Molo - 4,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-New Carpenter Bridge,Molo - 3,mandurriao - 6,Two-Way,531.3,Active,3324.21,3367.91,2621.97,No
-Locsin St,Molo - 4,Molo - 5,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-M.H Del Pilar,Molo - 4,Molo - 9,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Locsin St,Molo - 5,Molo - 6,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Timawa St,Molo - 5,Proper - 2,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Molo Blvd 2,Molo - 6,Proper - 4,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Rotunda,Molo - 7,Molo - 8,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-San Marcos St,Molo - 8,Molo - 3,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-M.H Del Pilar,Molo - 8,Molo - 9,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-M.H Del Pilar,Molo - 9,Molo - 10,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Molo - Proper Connect,Molo - 10,Proper - 1,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-M.H Del Pilar,Molo - 10,Molo - 7,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Gen Luna - Molo Connect,Proper - 1,Molo - 7,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Infante St 1,Proper - 1,Proper - 2,Two-Way,927.82,Active,3324.21,3357.59,2002.75,No
-Gen Luna St 1,Proper - 1,Proper - 7,Two-Way,1849.31,Active,3324.21,3369.18,2697.96,No
-Old Iloilo - Capiz Rd (Rev),Proper - 1,mandurriao - 1,Two-Way,2310.9,Active,3324.21,3459.3,8105.21,No
-Infante St 2,Proper - 2,Proper - 3,Two-Way,1741.59,Active,3324.21,3368.16,2637.01,No
-Delgado St,Proper - 2,Proper - 10,Two-Way,144.14,Active,3324.21,3348.83,1476.88,No
-Infante St 3,Proper - 3,Proper - 4,One-Way,1741.59,Active,3324.21,3353.39,1750.55,No
-Baluarte - Oton Blvd,Proper - 4,Proper - 5,One-Way,1741.59,Active,3324.21,3353.75,1772.28,No
-Rizal St 1,Proper - 5,Proper - 3,One-Way,2550.18,Active,3324.21,3363.01,2327.62,No
-Rizal St 2,Proper - 5,Proper - 6,Two-Way,1741.59,Active,3324.21,3368.76,2672.77,No
-Rizal St 3,Proper - 6,Proper - 14,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Ledesma St,Proper - 6,Proper - 11,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Gen Luna St 2,Proper - 7,Proper - 8,Two-Way,3086.21,Active,3324.21,3399.31,4505.76,No
-Bonifacio Drive,Proper - 7,lapaz - 10,Two-Way,298.83,Active,3324.21,3355.2,1859.27,No
-Gen Luna St 3,Proper - 8,Proper - 9,Two-Way,3157.89,Active,3324.21,3483.36,9548.88,No
-Ruperto Montinola St 1,Proper - 8,Proper - 10,Two-Way,88.06,Active,3324.21,3334.08,592.21,No
-Muelle Loney St 1,Proper - 9,Proper - 12,Two-Way,1712.12,Active,3324.21,3468.89,8680.73,No
-Quirino - Lopez Bridge,Proper - 9,lapuz - 2,Two-Way,3626.63,Active,3324.21,3555.72,13890.49,No
-Ruperto Montinola St 2,Proper - 10,Proper - 11,Two-Way,232.2,Active,3324.21,3335.2,659.56,No
-Arroyo St (Rev),Proper - 11,Proper - 12,Two-Way,1991.3,Active,3324.21,3407.04,4969.8,No
-JM Basa St 1,Proper - 11,Proper - 13,Two-Way,1591.78,Active,3324.21,3448.09,7432.43,No
-Muelle Loney St 2,Proper - 12,Proper - 18,Two-Way,3703.42,Active,3324.21,3644.01,19188.08,No
-JM Basa St 2,Proper - 13,Proper - 14,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Dela Rama St 1,Proper - 13,Proper - 17,Two-Way,1591.78,Active,3324.21,3417.76,5612.72,No
-General Hughes St 1,Proper - 14,Proper - 15,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Duran St,Proper - 15,Proper - 16,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-General Hughes St 2,Proper - 15,Proper - 22,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Dela Rama St 2,Proper - 17,Proper - 20,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Blumentritt 1,Proper - 17,Proper - 18,Two-Way,1591.78,Active,3324.21,3359.4,2111.08,No
-Blumentritt 2,Proper - 17,Proper - 19,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Muelle Loney St 3,Proper - 18,Proper - 19,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Muelle Loney St 4,Proper - 19,Proper - 21,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Fort San Pedro Dr,Proper - 21,Proper - 22,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Mandurriao - Jaro Rd,mandurriao - 1,mandurriao - 2,Two-Way,1029.7,Active,3324.21,3406.48,4936.37,No
-Old Iloilo-Capiz Rd - Old Lopez Jaena St (Rev),mandurriao - 1,jaro - 17,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-El 98 St (Rev),mandurriao - 1,jaro - 7,Two-Way,747.94,Active,3324.21,3459.59,8123.0,No
-Mandurriao - Jaro Rd - Mandurriao - Sn Miguel Rd,mandurriao - 2,mandurriao - 3,One-Way,664.6,Active,3324.21,3355.42,1872.66,No
-Mandurriao - Sn Miguel Rd,mandurriao - 3,mandurriao - 12,Two-Way,1659.4,CRITICAL CUT-EDGE,3324.21,DISCONNECTED,Dropped 3319 vol,N/A
-Mandurriao - Sn Miguel Rd - R Mapa St,mandurriao - 3,mandurriao - 4,One-Way,664.6,Active,3324.21,3352.78,1714.06,No
-Pakiad Rd,mandurriao - 4,mandurriao - 5,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-R Mapa St - Mandurriao - Jaro Rd,mandurriao - 4,mandurriao - 2,One-Way,664.6,Active,3324.21,3352.55,1700.23,No
-R Mapa St,mandurriao - 4,mandurriao - 6,Two-Way,475.5,Active,3324.21,3364.56,2420.73,No
-R Mapa St - Extension,mandurriao - 6,mandurriao - 7,Two-Way,55.8,Active,3324.21,3349.97,1545.38,No
-Mandurriao-Sn Miguel Rd - Iloilo Circumferential Rd 1,mandurriao - 9,mandurriao - 12,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (1),mandurriao - 10,mandurriao - 12,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (2),mandurriao - 11,mandurriao - 12,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-E Lopez St,jaro - 1,jaro - 4,Two-Way,298.83,Active,3324.21,3335.68,688.32,No
-Luna St (Rev),jaro - 1,lapaz - 3,Two-Way,120.0,Active,3324.21,3335.68,688.32,No
-Commission Civil St,jaro - 2,jaro - 5,Two-Way,541.7,Active,3324.21,3377.47,3195.59,No
-Burgos St (Rev),jaro - 2,lapaz - 7,Two-Way,606.17,Active,3324.21,3377.47,3195.59,No
-Jereos St,jaro - 3,jaro - 25,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Jereos St (Rev),jaro - 3,lapaz - 6,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-E Lopez St - Plaza Rizal St - Commission Civil St,jaro - 4,jaro - 5,One-Way,1134.3,Active,3324.21,3351.23,1621.03,No
-Commission Civil St - Plaza Rizal St - Iloilo-Capiz Rd,jaro - 5,jaro - 6,One-Way,1069.83,Active,3324.21,3384.8,3635.32,No
-Plaza Rizal St - Balabago Rd,jaro - 6,jaro - 9,One-Way,1186.0,Active,3324.21,3482.24,9481.86,No
-Iloilo-Capiz Rd - Plaza Rizal St - El 98 St,jaro - 6,jaro - 7,One-Way,877.95,Active,3324.21,3357.34,1987.91,No
-El 98 St - Plaza Rizal St - E Lopez St,jaro - 7,jaro - 4,One-Way,955.47,Active,3324.21,3378.82,3276.66,No
-Lopez Jaena St - Plaza Rizal St,jaro - 8,jaro - 6,One-Way,877.95,Active,3324.21,3357.34,1987.91,No
-Lopez Jaena St - Old Lopez Jaena St,jaro - 8,jaro - 18,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo Capiz Rd - Balabago Rd (Rev),jaro - 9,jaro - 14,Two-Way,1662.59,Active,3324.21,3404.44,4813.83,No
-Balabago Rd,jaro - 9,jaro - 10,Two-Way,1049.31,Active,3324.21,3435.4,6671.36,No
-Iloilo-Capiz Rd - Lopez Jaena St,jaro - 9,jaro - 8,One-Way,1338.55,Active,3324.21,3480.61,9383.99,No
-Buhang Flyover - Balabago Rd (Rev),jaro - 10,jaro - 12,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo-Capiz Rd - Iloilo Circumferential Rd 1 - Monfort Blvd,jaro - 10,jaro - 11,Two-Way,1049.31,Active,3324.21,3435.4,6671.36,No
-Monfort Blvd - Leganes,jaro - 11,jaro - 20,Two-Way,1152.8,Active,3324.21,3359.12,2094.47,No
-Lapaz - Monfort Blvd (Rev),jaro - 11,jaro - 19,Two-Way,1268.22,Active,3324.21,3620.44,17773.44,No
-Iloilo-Capiz Rd - Buhang Flyover (Rev),jaro - 12,jaro - 14,Two-Way,1672.02,Active,3324.21,3371.05,2810.34,No
-Buhang Flyover,jaro - 12,jaro - 13,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo Radial By-Pass Rd 4 - Buhang Flyover (Rev),jaro - 13,jaro - 15,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Buhang Flyover - Iloilo-Capiz Rd,jaro - 13,jaro - 14,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo-Capiz Rd - Iloilo Circumferential Rd 1,jaro - 14,jaro - 21,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo Circumferential - Iloilo Radial By-Pass Rd 4,jaro - 15,jaro - 22,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo Radial By-Pass Rd 4,jaro - 15,jaro - 23,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Old Iloilo-Capiz Rd - Old Lopez Jaena St (Rev),jaro - 16,jaro - 17,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Old Iloilo-Capiz Rd - Pavia,jaro - 16,jaro - 24,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Old Lopez Jaena St - Old Iloilo-Capiz Rd (Rev),jaro - 17,jaro - 18,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Old Lopez Jaena St - Old Iloilo-Capiz Rd,jaro - 18,jaro - 16,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Monfort Blvd (Rev),jaro - 19,lapaz - 9,Two-Way,1443.15,Active,3324.21,3706.21,22919.62,No
-Luna St - Huervana St (Rev),lapaz - 1,lapaz - 3,Two-Way,298.83,Active,3324.21,3352.67,1707.8,No
-Luna St - Esplanade 5,lapaz - 1,lapaz - 10,Two-Way,120.0,Active,3324.21,3355.2,1859.27,No
-Huervana St - Rizal St,lapaz - 1,lapaz - 2,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Rizal St - Luna St,lapaz - 2,lapaz - 3,One-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Huervana St - Burgos St,lapaz - 2,lapaz - 4,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Rizal St - Huervana St,lapaz - 2,lapuz - 2,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Huervana St - Jereos St,lapaz - 4,lapaz - 5,One-Way,606.17,Active,3324.21,3364.38,2409.82,No
-Divinagracia St,lapaz - 4,lapuz - 1,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Jereos St - Huervana Ext,lapaz - 5,lapaz - 6,One-Way,541.7,Active,3324.21,3368.66,2666.95,No
-Lopez Jaena St,lapaz - 5,lapaz - 8,Two-Way,606.17,Active,3324.21,3383.93,3583.41,No
-Huervana Ext,lapaz - 6,lapaz - 7,One-Way,541.7,Active,3324.21,3368.66,2666.95,No
-Burgos St - Huervana St,lapaz - 7,lapaz - 4,One-Way,606.17,Active,3324.21,3358.12,2034.43,No
-Baldoza St,lapaz - 8,lapaz - 9,Two-Way,606.17,Active,3324.21,3383.93,3583.41,No
-Coastal Rd,lapaz - 9,lapuz - 7,Two-Way,130.9,Active,3324.21,3353.75,1772.56,No
-Railroad St,lapuz - 1,lapuz - 3,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Rizal St - Ferry Terminal Access Rd,lapuz - 2,lapuz - 4,Two-Way,3626.63,Active,3324.21,3718.93,23683.28,No
-New Iloilo Ferry Terminal Access Rd,lapuz - 4,lapuz - 5,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Rizal St - Iloilo Airport Direct Rd,lapuz - 4,lapuz - 6,Two-Way,584.1,Active,3324.21,3362.08,2272.22,No
-Lapuz Mansaya Loboc Rd,lapuz - 6,lapuz - 7,Two-Way,0.0,Inactive,3324.21,3347.54,1399.73,No
-Iloilo Airport Direct Rd,lapuz - 6,lapuz - 8,Two-Way,584.1,Active,3324.21,3362.08,2272.22,No
+Osmena St,villa - 1,villa - 6,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Yulo Dr,villa - 1,villa - 4,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Jocson St,villa - 1,villa - 2,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Circumferential Rd 1,villa - 2,villa - 3,Two-Way,629.7,Active,3573.2,3548.6,-1476.11,Yes
+Iloilo Circumferential Rd 1,villa - 2,mandurriao - 8,Two-Way,634.2,CRITICAL CUT-EDGE,3573.2,DISCONNECTED,Dropped 1268 vol,N/A
+Quezon St,villa - 3,villa - 4,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Molo - Arevalo Connect (Rev),villa - 3,Molo - 3,Two-Way,2162.3,CRITICAL CUT-EDGE,3573.2,DISCONNECTED,Dropped 4325 vol,N/A
+Molo Blvd (Rev),villa - 5,Molo - 6,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Pakiad Rd (Rev),villa - 6,villa - 7,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Locsin St,Molo - 3,Molo - 4,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+New Carpenter Bridge,Molo - 3,mandurriao - 6,Two-Way,531.3,Active,3573.2,3571.77,-85.35,Yes
+Locsin St,Molo - 4,Molo - 5,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+M.H Del Pilar,Molo - 4,Molo - 9,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Locsin St,Molo - 5,Molo - 6,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Timawa St,Molo - 5,Proper - 2,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Molo Blvd 2,Molo - 6,Proper - 4,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Rotunda,Molo - 7,Molo - 8,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+San Marcos St,Molo - 8,Molo - 3,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+M.H Del Pilar,Molo - 8,Molo - 9,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+M.H Del Pilar,Molo - 9,Molo - 10,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Molo - Proper Connect,Molo - 10,Proper - 1,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+M.H Del Pilar,Molo - 10,Molo - 7,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Gen Luna - Molo Connect,Proper - 1,Molo - 7,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Infante St 1,Proper - 1,Proper - 2,Two-Way,826.19,Active,3573.2,3620.46,2835.86,No
+Gen Luna St 1,Proper - 1,Proper - 7,Two-Way,1680.47,Active,3573.2,3569.7,-210.07,Yes
+Old Iloilo - Capiz Rd (Rev),Proper - 1,mandurriao - 1,Two-Way,2375.46,Active,3573.2,3670.83,5858.04,No
+Infante St 2,Proper - 2,Proper - 3,Two-Way,1386.14,Active,3573.2,3567.36,-350.41,Yes
+Delgado St,Proper - 2,Proper - 10,Two-Way,397.95,Active,3573.2,3552.91,-1217.06,Yes
+Infante St 3,Proper - 3,Proper - 4,One-Way,1386.14,Active,3573.2,3551.06,-1328.52,Yes
+Baluarte - Oton Blvd,Proper - 4,Proper - 5,One-Way,1386.14,Active,3573.2,3551.7,-1290.07,Yes
+Rizal St 1,Proper - 5,Proper - 3,One-Way,2138.16,Active,3573.2,3560.42,-766.86,Yes
+Rizal St 2,Proper - 5,Proper - 6,Two-Way,1386.14,Active,3573.2,3568.55,-279.04,Yes
+Rizal St 3,Proper - 6,Proper - 14,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Ledesma St,Proper - 6,Proper - 11,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Gen Luna St 2,Proper - 7,Proper - 8,Two-Way,2834.34,Active,3573.2,3579.5,378.06,No
+Bonifacio Drive,Proper - 7,lapaz - 10,Two-Way,415.58,Active,3573.2,3569.35,-231.11,Yes
+Gen Luna St 3,Proper - 8,Proper - 9,Two-Way,2882.59,Active,3573.2,3626.92,3223.44,No
+Ruperto Montinola St 1,Proper - 8,Proper - 10,Two-Way,95.62,Active,3573.2,3552.75,-1226.72,Yes
+Muelle Loney St 1,Proper - 9,Proper - 12,Two-Way,1671.05,Active,3573.2,3662.96,5385.69,No
+Quirino - Lopez Bridge,Proper - 9,lapuz - 2,Two-Way,3378.68,Active,3573.2,3759.31,11166.89,No
+Ruperto Montinola St 2,Proper - 10,Proper - 11,Two-Way,493.58,Active,3573.2,3556.79,-984.32,Yes
+Arroyo St (Rev),Proper - 11,Proper - 12,Two-Way,1751.1,Active,3573.2,3602.06,1731.93,No
+JM Basa St 1,Proper - 11,Proper - 13,Two-Way,1873.05,Active,3573.2,3676.1,6174.05,No
+Muelle Loney St 2,Proper - 12,Proper - 18,Two-Way,3422.15,Active,3573.2,3972.48,23957.11,No
+JM Basa St 2,Proper - 13,Proper - 14,Two-Way,140.51,Active,3573.2,3593.14,1196.3,No
+Dela Rama St 1,Proper - 13,Proper - 17,Two-Way,1732.55,Active,3573.2,3604.93,1904.1,No
+General Hughes St 1,Proper - 14,Proper - 15,Two-Way,140.51,Active,3573.2,3603.99,1847.79,No
+Duran St,Proper - 15,Proper - 16,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+General Hughes St 2,Proper - 15,Proper - 22,Two-Way,140.51,Active,3573.2,3603.99,1847.79,No
+Dela Rama St 2,Proper - 17,Proper - 20,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Blumentritt 1,Proper - 17,Proper - 18,Two-Way,1410.77,Active,3573.2,3553.0,-1211.53,Yes
+Blumentritt 2,Proper - 17,Proper - 19,Two-Way,321.77,Active,3573.2,3549.74,-1407.31,Yes
+Muelle Loney St 3,Proper - 18,Proper - 19,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Muelle Loney St 4,Proper - 19,Proper - 21,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Fort San Pedro Dr,Proper - 21,Proper - 22,Two-Way,140.51,Active,3573.2,3603.99,1847.79,No
+Mandurriao - Jaro Rd,mandurriao - 1,mandurriao - 2,Two-Way,1029.7,Active,3573.2,3606.12,1975.11,No
+Old Iloilo-Capiz Rd - Old Lopez Jaena St (Rev),mandurriao - 1,jaro - 17,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+El 98 St (Rev),mandurriao - 1,jaro - 7,Two-Way,879.14,Active,3573.2,3685.76,6753.95,No
+Mandurriao - Jaro Rd - Mandurriao - Sn Miguel Rd,mandurriao - 2,mandurriao - 3,One-Way,664.6,Active,3573.2,3551.77,-1285.62,Yes
+Mandurriao - Sn Miguel Rd,mandurriao - 3,mandurriao - 12,Two-Way,1659.4,CRITICAL CUT-EDGE,3573.2,DISCONNECTED,Dropped 3319 vol,N/A
+Mandurriao - Sn Miguel Rd - R Mapa St,mandurriao - 3,mandurriao - 4,One-Way,664.6,Active,3573.2,3549.13,-1444.05,Yes
+Pakiad Rd,mandurriao - 4,mandurriao - 5,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+R Mapa St - Mandurriao - Jaro Rd,mandurriao - 4,mandurriao - 2,One-Way,664.6,Active,3573.2,3550.0,-1391.83,Yes
+R Mapa St,mandurriao - 4,mandurriao - 6,Two-Way,475.5,Active,3573.2,3557.96,-914.08,Yes
+R Mapa St - Extension,mandurriao - 6,mandurriao - 7,Two-Way,55.8,Active,3573.2,3546.33,-1612.18,Yes
+Mandurriao-Sn Miguel Rd - Iloilo Circumferential Rd 1,mandurriao - 9,mandurriao - 12,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (1),mandurriao - 10,mandurriao - 12,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo Circumferential Rd 1 - Mandurriao-Sn Miguel Rd (2),mandurriao - 11,mandurriao - 12,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+E Lopez St,jaro - 1,jaro - 4,Two-Way,302.96,Active,3573.2,3557.56,-938.08,Yes
+Luna St (Rev),jaro - 1,lapaz - 3,Two-Way,255.14,Active,3573.2,3557.56,-938.08,Yes
+Commission Civil St,jaro - 2,jaro - 5,Two-Way,552.84,Active,3573.2,3575.6,144.05,No
+Burgos St (Rev),jaro - 2,lapaz - 7,Two-Way,661.27,Active,3573.2,3575.6,144.05,No
+Jereos St,jaro - 3,jaro - 25,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Jereos St (Rev),jaro - 3,lapaz - 6,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+E Lopez St - Plaza Rizal St - Commission Civil St,jaro - 4,jaro - 5,One-Way,1273.76,Active,3573.2,3569.4,-227.96,Yes
+Commission Civil St - Plaza Rizal St - Iloilo-Capiz Rd,jaro - 5,jaro - 6,One-Way,1165.33,Active,3573.2,3607.55,2061.22,No
+Plaza Rizal St - Balabago Rd,jaro - 6,jaro - 9,One-Way,1266.23,Active,3573.2,3724.89,9101.71,No
+Iloilo-Capiz Rd - Plaza Rizal St - El 98 St,jaro - 6,jaro - 7,One-Way,890.04,Active,3573.2,3558.37,-889.86,Yes
+El 98 St - Plaza Rizal St - E Lopez St,jaro - 7,jaro - 4,One-Way,1225.94,Active,3573.2,3589.55,981.13,No
+Lopez Jaena St - Plaza Rizal St,jaro - 8,jaro - 6,One-Way,878.9,Active,3573.2,3554.68,-1111.19,Yes
+Lopez Jaena St - Old Lopez Jaena St,jaro - 8,jaro - 18,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo Capiz Rd - Balabago Rd (Rev),jaro - 9,jaro - 14,Two-Way,1434.31,Active,3573.2,3690.13,7016.22,No
+Balabago Rd,jaro - 9,jaro - 10,Two-Way,1357.82,Active,3573.2,3700.09,7613.37,No
+Iloilo-Capiz Rd - Lopez Jaena St,jaro - 9,jaro - 8,One-Way,1339.5,Active,3573.2,3736.04,9770.33,No
+Buhang Flyover - Balabago Rd (Rev),jaro - 10,jaro - 12,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo-Capiz Rd - Iloilo Circumferential Rd 1 - Monfort Blvd,jaro - 10,jaro - 11,Two-Way,1357.82,Active,3573.2,3622.77,2974.66,No
+Monfort Blvd - Leganes,jaro - 11,jaro - 20,Two-Way,1152.8,Active,3573.2,3554.24,-1137.55,Yes
+Lapaz - Monfort Blvd (Rev),jaro - 11,jaro - 19,Two-Way,1267.67,Active,3573.2,3921.15,20877.47,No
+Iloilo-Capiz Rd - Buhang Flyover (Rev),jaro - 12,jaro - 14,Two-Way,1459.27,Active,3573.2,3583.16,597.53,No
+Buhang Flyover,jaro - 12,jaro - 13,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo Radial By-Pass Rd 4 - Buhang Flyover (Rev),jaro - 13,jaro - 15,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Buhang Flyover - Iloilo-Capiz Rd,jaro - 13,jaro - 14,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo-Capiz Rd - Iloilo Circumferential Rd 1,jaro - 14,jaro - 21,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo Circumferential - Iloilo Radial By-Pass Rd 4,jaro - 15,jaro - 22,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo Radial By-Pass Rd 4,jaro - 15,jaro - 23,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Old Iloilo-Capiz Rd - Old Lopez Jaena St (Rev),jaro - 16,jaro - 17,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Old Iloilo-Capiz Rd - Pavia,jaro - 16,jaro - 24,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Old Lopez Jaena St - Old Iloilo-Capiz Rd (Rev),jaro - 17,jaro - 18,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Old Lopez Jaena St - Old Iloilo-Capiz Rd,jaro - 18,jaro - 16,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Monfort Blvd (Rev),jaro - 19,lapaz - 9,Two-Way,1442.2,Active,3573.2,4091.18,31078.99,No
+Luna St - Huervana St (Rev),lapaz - 1,lapaz - 3,Two-Way,302.96,Active,3573.2,3552.0,-1271.75,Yes
+Luna St - Esplanade 5,lapaz - 1,lapaz - 10,Two-Way,255.14,Active,3573.2,3569.35,-231.11,Yes
+Huervana St - Rizal St,lapaz - 1,lapaz - 2,One-Way,112.62,Active,3573.2,3558.18,-901.25,Yes
+Rizal St - Luna St,lapaz - 2,lapaz - 3,One-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Huervana St - Burgos St,lapaz - 2,lapaz - 4,Two-Way,112.62,Active,3573.2,3558.18,-901.25,Yes
+Rizal St - Huervana St,lapaz - 2,lapuz - 2,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Huervana St - Jereos St,lapaz - 4,lapaz - 5,One-Way,773.89,Active,3573.2,3610.57,2242.43,No
+Divinagracia St,lapaz - 4,lapuz - 1,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Jereos St - Huervana Ext,lapaz - 5,lapaz - 6,One-Way,552.84,Active,3573.2,3594.61,1284.57,No
+Lopez Jaena St,lapaz - 5,lapaz - 8,Two-Way,773.89,Active,3573.2,3656.3,4985.96,No
+Huervana Ext,lapaz - 6,lapaz - 7,One-Way,552.84,Active,3573.2,3594.61,1284.57,No
+Burgos St - Huervana St,lapaz - 7,lapaz - 4,One-Way,661.27,Active,3573.2,3560.86,-740.45,Yes
+Baldoza St,lapaz - 8,lapaz - 9,Two-Way,773.89,Active,3573.2,3656.3,4985.96,No
+Coastal Rd,lapaz - 9,lapuz - 7,Two-Way,159.26,Active,3573.2,3555.19,-1080.4,Yes
+Railroad St,lapuz - 1,lapuz - 3,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Rizal St - Ferry Terminal Access Rd,lapuz - 2,lapuz - 4,Two-Way,3378.68,Active,3573.2,4017.48,26656.87,No
+New Iloilo Ferry Terminal Access Rd,lapuz - 4,lapuz - 5,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Rizal St - Iloilo Airport Direct Rd,lapuz - 4,lapuz - 6,Two-Way,555.74,Active,3573.2,3556.38,-1008.82,Yes
+Lapuz Mansaya Loboc Rd,lapuz - 6,lapuz - 7,Two-Way,0.0,Inactive,3573.2,3543.89,-1758.24,Yes
+Iloilo Airport Direct Rd,lapuz - 6,lapuz - 8,Two-Way,555.74,Active,3573.2,3556.38,-1008.82,Yes
